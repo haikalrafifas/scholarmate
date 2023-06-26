@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>ScholarMate</title>
+    <style>.card-container{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}.card{margin-bottom:20px;padding:20px;border:1px solid #ccc;border-radius:5px;text-align:center}@media (max-width:576px){.card{flex-basis:100%}}@media (min-width:577px) and (max-width:768px){.card{flex-basis:calc(50% - 20px)}}@media (min-width:769px){.card{flex-basis:calc(33.33% - 20px)}}</style>
+  </head>
+  <body>
+    <h1 align="center">ScholarMate</h1>
+    <div id="app" class="card-container"></div>
+    <script>
+    const app = document.getElementById('app');
+    fetch('/api/scholarship/all/id-name-deadline_date')
+    .then(response => response.json())
+    .then(data => {
+      for ( const item of data ) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <h2>${item.name}</h2>
+          <b>Deadline: </b><label>${item.deadline_date}</label>
+          <button id="btn-detail" data-id="${item.id}">Detail</button>
+          <div id="scholarship-detail"></div>
+        `;
+        app.appendChild(card);
+      }
+      const buttons = document.querySelectorAll('#btn-detail')
+      buttons.forEach(button => {
+        button.onclick = function() {
+            const id = button.getAttribute('data-id')
+            fetch(`/api/scholarship/${id}`)
+            .then(response => response.json())
+            .then(data => {
+                data = data[0]
+                const card = button.closest('.card')
+                const detail = card.querySelector('#scholarship-detail');
+                detail.innerHTML = `
+                  <ul>
+                    <li>Nama: ${data.name}</li>
+                    <li>Jenis: ${data.funding_type}</li>
+                    <li>Gelar: ${data.degrees}</li>
+                    <li>Mulai Pendaftaran: ${data.registration_date}</li>
+                    <li>Akhir Pendaftaran: ${data.deadline_date}</li>
+                    <li>Dokumen Persyaratan: ${data.documents}</li>
+                    <li>Negara: ${data.countries}</li>
+                    <li>Program Studi: ${data.majors}</li>
+                    <li>Fakultas: ${data.disciplines}</li><br><br>
+                    Informasi selengkapnya ada <a href="${data.links}">disini</a>.
+                  <ul>
+                `;
+            })
+        }
+      })
+    })
+    .catch(error => {
+      console.error('Error while fetching data', error);
+    });
+    </script>
+  </body>
+  </html>  

@@ -69,21 +69,25 @@ const getUpdateColumns = (columnNames) => {
 
 cron.schedule(`0 */1 * * * *`, fetchDataToMySQL); // fetches every 1 minute
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-  res.send('Hi :)');
+  res.sendFile('scholarship.html', { root: 'public' });
 });
 
-app.get('/api/scholarship/:id', async (req, res) => {
+app.get('/api/scholarship/:id/:column?', async (req, res) => {
   try {
-    const query = `SELECT * FROM scholarships ${req.params.id !== 'all' ? 'WHERE id = ?' : ''}`;
+    const columns = req.params.column ? req.params.column.split('-').map(column => mysql.escapeId(column)).join(', ') : '*';
+    const whereClause = req.params.id !== 'all' ? 'WHERE id = ?' : '';
     const queryParams = req.params.id !== 'all' ? [req.params.id] : [];
+    const query = `SELECT ${columns} FROM scholarships ${whereClause}`;
     const [results] = await pool.query(query, queryParams);
 
     results.length === 0 ? res.status(404).json({ error: 'Scholarship not found' })
                          : res.json(results);
   } catch (error) {
     console.error('Error fetching scholarship data:', error);
-    res.status(500).json({ error: 'Error fetching scholarship data' });
+    res.status(500).json({ error: 'Error while fetching scholarship data' });
   }
 });
 
