@@ -1,0 +1,1 @@
+pada folder ini kita akan memasukkan file static berupa javascript, css, dan beberapa gambar

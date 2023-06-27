@@ -1,0 +1,1 @@
+di folder ini kita akan memasukkan file javascript buat mempercantik website kita
