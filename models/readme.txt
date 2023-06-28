@@ -1,1 +1,0 @@
-Di sini kita akan membuat file file yang berkaitan dengan models di database kita. Model bertanggung jawab untuk mengelola logika bisnis, interaksi dengan basis data, dan pemrosesan data dalam aplikasi.

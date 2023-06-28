@@ -1,1 +1,0 @@
-Di sini kita akan memasukkan file-file yang berkaitan dengan controllers di database kita. Controller bertanggung jawab untuk menangani input pengguna, mengoordinasikan interaksi antara model dan tampilan, dan mengontrol alur aplikasi.
