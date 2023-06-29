@@ -2,23 +2,17 @@ require("dotenv").config(); //ALLOWS ENVIROMENT VARIABLE TO BE SET ON PROCESS.EN
 
 const express = require("express");
 const app = express();
-const pool = require("./config/db"); //
+const { logEvents, logger } = require("./middleware/logEvents");
+const { errorHandler } = require("./middleware/errorHandler");
+
+// logger
+app.use(logger);
 
 //middleware
 app.use(express.json()); //parse json data
 
 //Global error handler
-app.use((err, req, res, next) => {
-  console.log(err.stack);
-  console.log(err.name);
-  console.log(err.code);
-
-  res.status(err.status || 500);
-  res.json({
-    status: err.status,
-    message: err.message,
-  });
-});
+app.use(errorHandler);
 
 app.use("/scholarships", require("./routes/api/scholarships"));
 
