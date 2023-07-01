@@ -1,0 +1,16 @@
+.nav-navbar {
+  align-items: center;
+  background-color: #4f709c;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 24px;
+  position: relative;
+  width: 1280px;
+}
+
+.nav-navbar .logo-instance {
+  background-image: url(https://generation-sessions.s3.amazonaws.com/f2ca049efd039528e874eef19425eca5/img/wordmark-4.svg) !important;
+  min-width: 131px !important;
+  position: relative !important;
+  width: unset !important;
+}

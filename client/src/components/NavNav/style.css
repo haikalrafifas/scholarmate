@@ -1,0 +1,12 @@
+.nav-nav {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+}
+
+.nav-nav .nav-list-item-instance {
+  color: #ffffff !important;
+}
