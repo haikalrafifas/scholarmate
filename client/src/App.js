@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { DetailJurusan } from "./pages/DetailJurusan/DetailJurusan";
+import { DetailBeasiswa } from "./pages/DetailBeasiswa/DetailBeasiswa";
 // selalu hapus import code yang ingin dites dari direktori lain.
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Mulai masukkan code yang ingin dites di bawah baris ini */}
-        <DetailJurusan />
+        <DetailBeasiswa />
       </header>
     </div>
   );
