@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const Button = ({ property1, className }) => {
+export const Button = ({ text, property1, className }) => {
   return (
     <div className={`button ${property1} ${className}`}>
       {["primary", "with-logo-right"].includes(property1) && (
-        <div className="label">Button</div>
+        <div className="label">{ text }</div>
       )}
 
       {["with-logo-left", "with-logo-right"].includes(property1) && (
@@ -21,7 +21,7 @@ export const Button = ({ property1, className }) => {
         />
       )}
 
-      {property1 === "with-logo-left" && <div className="label">Button</div>}
+      {property1 === "with-logo-left" && <div className="label-light">{ text }</div>}
     </div>
   );
 };

@@ -1,0 +1,193 @@
+.LOGIN {
+  background-color: #faeee5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.LOGIN .overlap-group-wrapper {
+  background-color: #faeee5;
+  border: 1px none;
+  height: 900px;
+  width: 1280px;
+}
+
+.LOGIN .overlap-group {
+  height: 795px;
+  left: 97px;
+  position: relative;
+  top: 52px;
+  width: 1079px;
+}
+
+.LOGIN .rectangle {
+  background-color: #4f709c;
+  border-radius: 20px;
+  height: 795px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 600px;
+}
+
+.LOGIN .img {
+  height: 795px;
+  left: 501px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 578px;
+}
+
+.LOGIN .div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  left: 82px;
+  position: absolute;
+  top: 124px;
+  width: fit-content;
+}
+
+.LOGIN .selamat-DATANG {
+  color: #000000;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.LOGIN .text-wrapper {
+  color: #ffffff;
+}
+
+.LOGIN .span {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.LOGIN .input-field-instance {
+  width: 322px !important;
+}
+
+.LOGIN .design-component-instance-node {
+  align-self: stretch !important;
+  width: unset !important;
+}
+
+.LOGIN .input-field-2 {
+  color: #5d5d5d !important;
+}
+
+.LOGIN .frame-2 {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: fit-content;
+}
+
+.LOGIN .rectangle-2 {
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 22px;
+  min-width: 25px;
+  position: relative;
+}
+
+.LOGIN .ingat-untuk-hari {
+  color: #ffffff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 12px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.LOGIN .text-wrapper-2 {
+  color: #ff2828;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin-top: -0.5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.LOGIN .login-button {
+  background-color: #d8c4b6 !important;
+  height: 47px !important;
+  width: 323px !important;
+}
+
+.LOGIN .button-instance {
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin-top: unset !important;
+}
+
+.LOGIN .frame-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  position: relative;
+  width: fit-content;
+}
+
+.LOGIN .belum-punya-akun {
+  color: transparent;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.LOGIN .text-wrapper-3 {
+  color: #ff0000;
+}
+
+.LOGIN .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 21px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.LOGIN .button-2 {
+  font-family: "Poppins-Regular", Helvetica !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+  margin-top: unset !important;
+}
+
+.LOGIN .button-3 {
+  height: 47px !important;
+  width: 323px !important;
+}

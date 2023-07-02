@@ -12,8 +12,21 @@
 .button .label {
   color: #000000;
   font-family: "Source Code Pro", Helvetica;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0;
+  line-height: 45px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button .label-light {
+  color: #000000;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 45px;
   margin-top: -1px;
