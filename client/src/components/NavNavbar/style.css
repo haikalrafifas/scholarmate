@@ -4,8 +4,10 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 24px;
-  position: relative;
-  width: 1280px;
+  position: fixed; /* Navbar tetap di atas halaman */
+  top: 0; /* Atur posisi navbar di bagian atas */
+  width: 100%; /* Gunakan lebar penuh */
+  z-index: 999; /* Atur z-index untuk menentukan tumpukan elemen */
 }
 
 .nav-navbar .logo-instance {

@@ -21,3 +21,7 @@
   width: fit-content;
   text-decoration: none;
 }
+
+.list-item:hover{
+  color: antiquewhite;
+}
