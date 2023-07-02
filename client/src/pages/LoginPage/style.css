@@ -32,6 +32,7 @@
 }
 
 .LOGIN .img {
+  border-radius: 20px;
   height: 795px;
   left: 501px;
   object-fit: cover;

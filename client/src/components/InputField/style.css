@@ -61,7 +61,7 @@
 
 .input-password input {
   border: none; /* Ganti dengan none agar tidak ada border */
-  width: 150px;
+  width: 100%;
   font-size: 12px;
   outline: none; /* Hapus border saat focus */
 }
