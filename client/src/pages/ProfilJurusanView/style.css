@@ -40,10 +40,11 @@
 }
 
 .PROFIL-JURUSAN-VIEW .div {
-  align-items: flex-start;
+  align-items: center; /* Mengatur pengaturan vertikal ke tengah */
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center; /* Mengatur pengaturan horizontal ke tengah */
   left: 0;
   position: absolute;
   top: 0;
@@ -56,6 +57,8 @@
   height: 782px;
   min-width: 1651px;
   position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .PROFIL-JURUSAN-VIEW .text-wrapper {
@@ -82,12 +85,14 @@
   position: absolute;
   top: 532px;
   white-space: nowrap;
+  margin-left: 20px;
 }
 
 .PROFIL-JURUSAN-VIEW .nav-navbar-instance {
   left: 144px !important;
   position: absolute !important;
   top: 391px !important;
+  justify-content: space-between;
 }
 
 .PROFIL-JURUSAN-VIEW .design-component-instance-node {
