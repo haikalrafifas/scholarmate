@@ -24,6 +24,15 @@ class Scholarships {
 
     return db.execute(sql);
   }
+
+  static getScholarshipByNegaraTujuanAndOrderByPopularity(
+    negara_tujuan,
+    order_by
+  ) {
+    let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${negara_tujuan}%' ORDER BY '%${order_by}%' DESC;`;
+
+    return db.execute(sql);
+  }
 }
 
 module.exports = Scholarships;

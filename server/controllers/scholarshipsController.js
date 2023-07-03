@@ -54,9 +54,34 @@ const getScholarshipByType = async (req, res, next) => {
   }
 };
 
+const getScholarshipOrderBy = async (req, res, next) => {
+  const degree = req.params.degree;
+  const negara_tujuan = req.params.negara_tujuan;
+  const type = req.params.type;
+  const order_by = req.params.order_by;
+
+  if (negara_tujuan && order_by) {
+    try {
+      let [scholarships, _] =
+        await ScholarshipModel.getScholarshipByNegaraTujuanAndOrderByPopularity(
+          negara_tujuan,
+          order_by
+        );
+
+      res.status(200).json(scholarships);
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  } else {
+    next(new Error("Invalid parameters"));
+  }
+};
+
 module.exports = {
   getAllScholarships,
   getScholarshipByDegree,
   getScholarshipByNegaraTujuan,
   getScholarshipByType,
+  getScholarshipOrderBy,
 };

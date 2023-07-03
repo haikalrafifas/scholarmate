@@ -4,6 +4,10 @@ const scholarshipsController = require("../../controllers/scholarshipsController
 
 router.route("/").get(scholarshipsController.getAllScholarships);
 
+router
+  .route("/:negara_tujuan&:order_by")
+  .get(scholarshipsController.getScholarshipOrderBy);
+
 router.route("/:degree").get(scholarshipsController.getScholarshipByDegree);
 
 router
