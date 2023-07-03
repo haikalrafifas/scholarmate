@@ -59,16 +59,17 @@ export const ProfilPengguna = () => {
                 frameClassName="input-field-2"
                 inputTextClassName="input-field-3"
                 property="input-text"
-                text="Nama Lengkap"
-                text1="Robert Downey"
+                title="Nama Lengkap"
+                value="Robert Downey" // Atur nilai awal teks menggunakan defaultValue
               />
               <InputField
                 className="input-field-instance"
                 frameClassName="input-field-2"
                 inputTextClassName="input-field-3"
                 property="input-text"
-                text="Alamat"
-                text1="Boston, USA"
+                title="Alamat"
+                type="text"
+                value="Boston, USA" // Atur nilai awal teks menggunakan defaultValue
               />
             </div>
             <div className="frame-9">
@@ -77,16 +78,16 @@ export const ProfilPengguna = () => {
                 frameClassName="input-field-2"
                 inputTextClassName="input-field-3"
                 property="input-text"
-                text="Email"
-                text1="Robert@Downey.com"
+                title="Email"
+                value="Robert@Downey.com" // Atur nilai awal teks menggunakan defaultValue
               />
               <InputField
                 className="input-field-instance"
                 frameClassName="input-field-2"
                 inputTextClassName="input-field-3"
                 property="input-text"
-                text="Institusi"
-                text1="Boston University"
+                title="Institusi"
+                value="Boston University" // Atur nilai awal teks menggunakan defaultValue
               />
             </div>
           </div>
