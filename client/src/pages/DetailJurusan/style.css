@@ -103,7 +103,9 @@
 }
 
 .DETAIL-PROFIL .nav-navbar-instance {
-  left: 185px !important;
+  left: 200px !important;
+  right: 400px;
+  margin-right: -225px;
   position: absolute !important;
   top: 389px !important;
 }
