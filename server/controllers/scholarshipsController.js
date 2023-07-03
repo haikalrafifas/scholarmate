@@ -4,7 +4,7 @@ const getAllScholarships = async (req, res, next) => {
   try {
     const scholarships = await ScholarshipModel.getAllScholarships();
 
-    res.statsu(200).json(scholarships);
+    res.status(200).json(scholarships);
   } catch (error) {
     console.log(error);
     next(error);
