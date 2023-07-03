@@ -1,0 +1,184 @@
+.profil-pengguna {
+  background-color: #faeee5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.profil-pengguna .div-2 {
+  background-color: #faeee5;
+  border: 1px none;
+  height: 911px;
+  position: relative;
+  width: 1280px;
+}
+
+.profil-pengguna .overlap-group {
+  height: 343px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 1280px;
+}
+
+.profil-pengguna .image {
+  height: 206px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.profil-pengguna .frame-6 {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  left: 61px;
+  position: absolute;
+  top: 143px;
+  width: fit-content;
+}
+
+.profil-pengguna .profile-picture-instance {
+  min-width: 200px !important;
+  position: relative !important;
+  width: unset !important;
+}
+
+.profil-pengguna .frame-7 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 920px;
+}
+
+.profil-pengguna .frame-8 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: fit-content;
+}
+
+.profil-pengguna .h-1 {
+  color: #000000;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 60px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profil-pengguna .text-wrapper-2 {
+  color: #000000;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profil-pengguna .material-symbols {
+  height: 37px;
+  min-width: 37px;
+  position: relative;
+}
+
+.profil-pengguna .nav-navbar-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.profil-pengguna .frame-9 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  left: 225px;
+  position: absolute;
+  top: 456px;
+  width: fit-content;
+}
+
+.profil-pengguna .frame-10 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: fit-content;
+}
+
+.profil-pengguna .frame-11 {
+  align-items: center;
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+  position: relative;
+  width: 369px;
+}
+
+.profil-pengguna .text-wrapper-3 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: -4.5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profil-pengguna .design-component-instance-node {
+  background-color: #9ecbee !important;
+  height: 30px !important;
+  width: 120px !important;
+}
+
+.profil-pengguna .button-4 {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  margin-bottom: -4px !important;
+  margin-top: -6px !important;
+}
+
+.profil-pengguna .text-wrapper-4 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-right: -4.5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profil-pengguna .line {
+  height: 2px;
+  min-width: 458px;
+  object-fit: cover;
+  position: relative;
+}
+
+.profil-pengguna .frame-12 {
+  align-items: center;
+  display: flex;
+  gap: 120px;
+  position: relative;
+  width: fit-content;
+}

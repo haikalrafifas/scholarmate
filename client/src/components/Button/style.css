@@ -7,6 +7,12 @@
   justify-content: center;
   padding: 8px 16px;
   position: relative;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4F709C;
+  color: #ffffff;
 }
 
 .button .label {
@@ -33,6 +39,10 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+}
+
+.button .label:hover {
+  color: #ffffff;
 }
 
 .button .devicon-google {

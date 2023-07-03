@@ -1,0 +1,122 @@
+.PROFIL-JURUSAN-VIEW {
+  background-color: #faeee5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.PROFIL-JURUSAN-VIEW .overlap-wrapper {
+  background-color: #faeee5;
+  border: 1px none;
+  height: 900px;
+  overflow: hidden;
+  width: 1280px;
+}
+
+.PROFIL-JURUSAN-VIEW .overlap {
+  height: 1288px;
+  left: -144px;
+  position: relative;
+  top: -391px;
+  width: 2448px;
+}
+
+.PROFIL-JURUSAN-VIEW .overlap-group {
+  height: 1288px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2448px;
+}
+
+.PROFIL-JURUSAN-VIEW .rectangle {
+  background-color: #d9d9d9;
+  height: 755px;
+  left: 1524px;
+  position: absolute;
+  top: 533px;
+  width: 924px;
+}
+
+.PROFIL-JURUSAN-VIEW .div {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.PROFIL-JURUSAN-VIEW .ellipse {
+  background-color: #4f709c;
+  border-radius: 825.5px/391px;
+  height: 782px;
+  min-width: 1651px;
+  position: relative;
+}
+
+.PROFIL-JURUSAN-VIEW .text-wrapper {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 531px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 654px;
+}
+
+.PROFIL-JURUSAN-VIEW .h-1 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 571px;
+  letter-spacing: 0;
+  line-height: 90px;
+  position: absolute;
+  top: 532px;
+  white-space: nowrap;
+}
+
+.PROFIL-JURUSAN-VIEW .nav-navbar-instance {
+  left: 144px !important;
+  position: absolute !important;
+  top: 391px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .design-component-instance-node {
+  background-image: url(https://generation-sessions.s3.amazonaws.com/10eb1a9d9807e7cdd6ffa87f6db4609b/img/wordmark-3.svg) !important;
+  min-width: 131px !important;
+  position: relative !important;
+  width: unset !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-instance {
+  left: 398px !important;
+  position: absolute !important;
+  top: 841px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-2 {
+  left: 598px !important;
+  position: absolute !important;
+  top: 836px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-3 {
+  left: 798px !important;
+  position: absolute !important;
+  top: 836px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-4 {
+  left: 998px !important;
+  position: absolute !important;
+  top: 836px !important;
+}

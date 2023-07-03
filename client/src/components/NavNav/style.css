@@ -5,6 +5,7 @@
   justify-content: center;
   position: relative;
   width: fit-content;
+  margin-right: 56px;
 }
 
 .nav-nav .nav-list-item-instance {

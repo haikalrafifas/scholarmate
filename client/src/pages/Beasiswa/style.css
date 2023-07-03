@@ -1,0 +1,240 @@
+.beasiswa {
+  background-color: #faeee5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.beasiswa .div-2 {
+  background-color: #faeee5;
+  border: 1px none;
+  height: 1025px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+.beasiswa .frame-6 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: -186px;
+  position: absolute;
+  top: -423px;
+  width: fit-content;
+}
+
+.beasiswa .ellipse-2 {
+  background-color: #4f709c;
+  border-radius: 825.5px/391px;
+  height: 782px;
+  min-width: 1651px;
+  position: relative;
+}
+
+.beasiswa .p {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  left: 540px;
+  letter-spacing: 0;
+  line-height: 45px;
+  position: absolute;
+  top: 672px;
+  white-space: nowrap;
+}
+
+.beasiswa .nav-navbar-instance {
+  left: 186px !important;
+  position: absolute !important;
+  top: 423px !important;
+}
+
+.beasiswa .design-component-instance-node {
+  background-image: url(https://generation-sessions.s3.amazonaws.com/17cf77a9f6c859392c2dcd3e1f3049e6/img/wordmark-3.svg) !important;
+  min-width: 131px !important;
+  position: relative !important;
+  width: unset !important;
+}
+
+.beasiswa .h-1 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 683px;
+  letter-spacing: 0;
+  line-height: 90px;
+  position: absolute;
+  top: 546px;
+  white-space: nowrap;
+}
+
+.beasiswa .search-bar-instance {
+  height: 55px !important;
+  left: 361px !important;
+  position: absolute !important;
+  top: 419px !important;
+  width: 784px !important;
+}
+
+.beasiswa .search-bar-2 {
+  margin-top: unset !important;
+}
+
+.beasiswa .card-beasiswa-instance {
+  left: 361px !important;
+  position: absolute !important;
+  top: 502px !important;
+}
+
+.beasiswa .card-beasiswa-2 {
+  left: 361px !important;
+  position: absolute !important;
+  top: 744px !important;
+}
+
+.beasiswa .card-beasiswa-3 {
+  left: 771px !important;
+  position: absolute !important;
+  top: 745px !important;
+}
+
+.beasiswa .card-beasiswa-4 {
+  left: 771px !important;
+  position: absolute !important;
+  top: 500px !important;
+}
+
+.beasiswa .frame-7 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 70px;
+  position: absolute;
+  top: 419px;
+  width: fit-content;
+}
+
+.beasiswa .frame-8 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 255px;
+}
+
+.beasiswa .text-wrapper-3 {
+  color: #000000;
+  flex: 1;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.beasiswa .vector-2 {
+  height: 18px;
+  min-width: 16px;
+  position: relative;
+}
+
+.beasiswa .vector-3 {
+  align-self: stretch;
+  height: 1px;
+  min-width: 255px;
+  object-fit: cover;
+  position: relative;
+}
+
+.beasiswa .frame-9 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: fit-content;
+}
+
+.beasiswa .text-wrapper-4 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.beasiswa .frame-10 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  width: fit-content;
+}
+
+.beasiswa .ellipse-3 {
+  border: 4px solid;
+  border-color: #000000;
+  border-radius: 12px/11.5px;
+  height: 23px;
+  min-width: 24px;
+  position: relative;
+}
+
+.beasiswa .text-wrapper-5 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 22px;
+  font-weight: 400;
+  height: 35px;
+  letter-spacing: 0;
+  line-height: 33px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: 26px;
+}
+
+.beasiswa .frame-11 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  width: 255px;
+}
+
+.beasiswa .text-wrapper-6 {
+  color: #000000;
+  flex: 1;
+  font-family: "Poppins", Helvetica;
+  font-size: 22px;
+  font-weight: 400;
+  height: 35px;
+  letter-spacing: 0;
+  line-height: 33px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.beasiswa .vector-4 {
+  align-self: stretch;
+  height: 1px;
+  margin-bottom: -0.5px;
+  min-width: 255px;
+  object-fit: cover;
+  position: relative;
+}
