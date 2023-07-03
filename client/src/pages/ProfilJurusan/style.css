@@ -1,0 +1,150 @@
+.PROFIL-JURUSAN-VIEW {
+  background-color: #faeee5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.PROFIL-JURUSAN-VIEW .div {
+  background-color: #faeee5;
+  border: 1px none;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+.PROFIL-JURUSAN-VIEW .p-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 148px;
+  padding: 10px;
+  position: absolute;
+  top: 409px;
+  width: fit-content;
+}
+
+.PROFIL-JURUSAN-VIEW .p {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 972px;
+}
+
+.PROFIL-JURUSAN-VIEW .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: -200px;
+  position: absolute;
+  top: -407px;
+  width: fit-content;
+}
+
+.PROFIL-JURUSAN-VIEW .ellipse-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: fit-content;
+}
+
+.PROFIL-JURUSAN-VIEW .ellipse {
+  background-color: #4f709c;
+  border-radius: 825.5px/391px;
+  height: 782px;
+  min-width: 1651px;
+  position: relative;
+}
+
+.PROFIL-JURUSAN-VIEW .h-1-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 616px;
+  padding: 10px;
+  position: absolute;
+  top: 552px;
+  width: fit-content;
+}
+
+.PROFIL-JURUSAN-VIEW .h-1 {
+  color: #e7f4ff;
+  font-family: "Poppins", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 90px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.PROFIL-JURUSAN-VIEW .nav-navbar-instance {
+  height: 75px !important;
+  left: 202px !important;
+  position: absolute !important;
+  top: 407px !important;
+  width: 1273px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .design-component-instance-node {
+  margin-bottom: -3px !important;
+  margin-top: -3px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .search-bar-instance {
+  height: 55px !important;
+  left: 610px !important;
+  position: absolute !important;
+  top: 680px !important;
+  width: 460px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .search-bar-2 {
+  margin-top: unset !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-ilmu {
+  left: 154px !important;
+  position: absolute !important;
+  top: 508px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-instance {
+  left: 354px !important;
+  position: absolute !important;
+  top: 508px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-hukum {
+  left: 554px !important;
+  position: absolute !important;
+  top: 508px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-teknik {
+  left: 754px !important;
+  position: absolute !important;
+  top: 508px !important;
+}
+
+.PROFIL-JURUSAN-VIEW .card-rumpun-ekonomi {
+  left: 954px !important;
+  position: absolute !important;
+  top: 508px !important;
+}

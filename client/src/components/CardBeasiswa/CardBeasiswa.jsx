@@ -10,11 +10,15 @@ export const CardBeasiswa = ({ degree, country }) => {
     <div className="card-beasiswa">
       <div className="frame">
         {degrees.map((degrees, index) => (
-          <label key={index} className="button-3">{degrees}</label>
+          <label key={index} className="button-3">
+            {degrees}
+          </label>
         ))}
 
         {countries.map((countries, index) => (
-          <label key={index} className="button-3">{countries}</label>
+          <label key={index} className="button-3">
+            {countries}
+          </label>
         ))}
 
         <div className="frame-2">
