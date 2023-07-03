@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const Button = ({ property1, className, onClick}) => {
+export const Button = ({ property1, className, onClick, text }) => {
   return (
-    <div className={`button ${property1} ${className}`} onClick={onClick} >
+    <div className={`button ${property1} ${className}`} onClick={onClick}>
       {["primary", "with-logo-right"].includes(property1) && (
-        <div className="label">Masuk</div>
+        <div className="label">{text}</div>
       )}
 
       {["with-logo-left", "with-logo-right"].includes(property1) && (
@@ -21,13 +21,15 @@ export const Button = ({ property1, className, onClick}) => {
         />
       )}
 
-      {property1 === "with-logo-left" && <div className="label">Button</div>}
+      {property1 === "with-logo-left" && <div className="label-light">{text}</div>}
     </div>
   );
 };
 
 Button.propTypes = {
   property1: PropTypes.oneOf(["primary", "with-logo-left", "with-logo-right"]),
+  onClick: PropTypes.func,
+  text: PropTypes.string,
 };
 
 export default Button;

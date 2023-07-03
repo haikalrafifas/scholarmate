@@ -1,0 +1,90 @@
+.PROSPEK-KARIR {
+    background-color: #faeee5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .PROSPEK-KARIR .frame-wrapper {
+    background-color: #faeee5;
+    border: 1px none;
+    height: 980px;
+    overflow: hidden;
+    /* width: 1280px; */
+    width: 100%;
+  }
+  
+  .PROSPEK-KARIR .frame {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* left: -185px; */
+    left: -4.7%;
+    position: relative;
+    top: -363px;
+    width: fit-content;
+  }
+  
+  .PROSPEK-KARIR .ellipse {
+    background-color: #4f709c;
+    border-radius: 825.5px/585.5px;
+    /* height: 50rem; */
+    height: 1171px;
+    min-width: 1651px;
+    position: relative;
+  }
+  
+  .PROSPEK-KARIR .text-wrapper {
+    color: #ffffff;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    /* left: 603px; */
+    left: 37%;
+    letter-spacing: 0;
+    line-height: 90px;
+    position: absolute;
+    text-align: center;
+    top: 519px;
+    white-space: nowrap;
+  }
+  
+  .PROSPEK-KARIR .p {
+    color: #ffffff;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    left: 335px;
+    letter-spacing: 0;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 835px;
+    width: 1048px;
+  }
+  
+  .PROSPEK-KARIR .nav-navbar-instance {
+    left: 185px !important;
+    position: absolute !important;
+    top: 363px !important;
+  }
+  
+  .PROSPEK-KARIR .design-component-instance-node {
+    min-width: 131px !important;
+    position: relative !important;
+    width: unset !important;
+  }
+  
+  .PROSPEK-KARIR .search-bar-instance {
+    height: 55px !important;
+    left: 607px !important;
+    position: absolute !important;
+    top: 690px !important;
+  }
+  
+  .PROSPEK-KARIR .search-bar-2 {
+    margin-top: unset !important;
+  }
+  

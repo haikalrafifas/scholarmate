@@ -1,0 +1,166 @@
+.SIGN-UP {
+    background-color: #faeee5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .SIGN-UP .overlap-group-wrapper {
+    background-color: #faeee5;
+    border: 1px none;
+    height: 900px;
+    width: 1280px;
+  }
+  
+  .SIGN-UP .overlap-group {
+    height: 795px;
+    left: 125px;
+    position: relative;
+    top: 52px;
+    width: 1074px;
+  }
+  
+  .SIGN-UP .rectangle {
+    background-color: #d8c4b6e6;
+    border-radius: 20px;
+    height: 795px;
+    left: 474px;
+    position: absolute;
+    top: 0;
+    width: 600px;
+  }
+  
+  .SIGN-UP .img {
+    border-radius: 20px;
+    height: 795px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 578px;
+  }
+  
+  .SIGN-UP .div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    left: 651px;
+    position: absolute;
+    top: 128px;
+    width: fit-content;
+  }
+  
+  .SIGN-UP .PEMBUATAN-AKUN {
+    color: #000000;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .SIGN-UP .text-wrapper {
+    color: #000000;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  
+  .SIGN-UP .span {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  
+  .SIGN-UP .input-field-instance {
+    width: 323px !important;
+  }
+  
+  .SIGN-UP .design-component-instance-node {
+    align-self: stretch !important;
+    width: unset !important;
+  }
+  
+  .SIGN-UP .input-field-2 {
+    color: #5d5d5d !important;
+  }
+  
+  .SIGN-UP .frame-2 {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .SIGN-UP .rectangle-2 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 24px;
+    min-width: 22px;
+    position: relative;
+  }
+  
+  .SIGN-UP .saya-SETUJU-dengan {
+    color: #000000;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 10px;
+    position: relative;
+    width: 290px;
+  }
+  
+  .SIGN-UP .button-instance {
+    background-color: #587dbd !important;
+    height: 47px !important;
+    width: 323px !important;
+  }
+  
+  .SIGN-UP .button-2 {
+    font-family: "Poppins-Regular", Helvetica !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 21px !important;
+    margin-top: unset !important;
+  }
+  
+  .SIGN-UP .sudah-punya-akun-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .SIGN-UP .sudah-punya-akun {
+    color: transparent;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .SIGN-UP .text-wrapper-2 {
+    color: #000000;
+  }
+  
+  .SIGN-UP .text-wrapper-3 {
+    color: #0019ff;
+  }
+  

@@ -1,0 +1,116 @@
+.DETAIL-PROFIL {
+  background-color: #faeee5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.DETAIL-PROFIL .div {
+  background-color: #faeee5;
+  border: 1px none;
+  height: 1327px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+.DETAIL-PROFIL .overlap-group {
+  background-color: #4f709ce6;
+  border-radius: 15px;
+  height: 128px;
+  left: 154px;
+  position: absolute;
+  top: 1379px;
+  width: 972px;
+}
+
+.DETAIL-PROFIL .section-prospek {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  left: 137px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 43px;
+  white-space: nowrap;
+}
+
+.DETAIL-PROFIL .vector-2 {
+  height: 29px;
+  left: -693px;
+  position: absolute;
+  top: 2908px;
+  width: 29px;
+}
+
+.DETAIL-PROFIL .frame {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 240px;
+  position: absolute;
+  top: 513px;
+  width: fit-content;
+}
+
+.DETAIL-PROFIL .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: -185px;
+  position: absolute;
+  top: -389px;
+  width: fit-content;
+}
+
+.DETAIL-PROFIL .ellipse {
+  background-color: #4f709c;
+  border-radius: 825.5px/391px;
+  height: 782px;
+  min-width: 1651px;
+  position: relative;
+}
+
+.DETAIL-PROFIL .text-wrapper {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 563px;
+  letter-spacing: 0;
+  line-height: 90px;
+  position: absolute;
+  top: 528px;
+  white-space: nowrap;
+}
+
+.DETAIL-PROFIL .p {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  left: 506px;
+  letter-spacing: 0;
+  line-height: 45px;
+  position: absolute;
+  top: 650px;
+  white-space: nowrap;
+}
+
+.DETAIL-PROFIL .nav-navbar-instance {
+  left: 185px !important;
+  position: absolute !important;
+  top: 389px !important;
+}
+
+.DETAIL-PROFIL .design-component-instance-node {
+  background-image: url(https://generation-sessions.s3.amazonaws.com/40c9c06088ec9a7a2bb827ee65c0033d/img/wordmark-3.svg) !important;
+  min-width: 131px !important;
+  position: relative !important;
+  width: unset !important;
+}
