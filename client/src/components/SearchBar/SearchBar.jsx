@@ -23,7 +23,7 @@ export const SearchBar = ({ property, className, placeholder }) => {
         <input
           type="text"
           className="cari-jurusan-yang"
-          placeholder={placeholder}
+          placeholder="Cari Jurusan yang ingin Kamu ketahui..."
         />
       )}
 
