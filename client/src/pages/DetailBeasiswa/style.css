@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  margin-left: -10px;
 }
 
 .beasiswa-detail .div {
@@ -20,6 +21,7 @@
   position: absolute;
   top: 340px;
   width: 1126px;
+  margin-top: -30px;
 }
 
 .beasiswa-detail .overlap-group {
@@ -161,6 +163,8 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+  margin-bottom: 0;
+
 }
 
 .beasiswa-detail .img {
@@ -205,6 +209,8 @@
   margin-top: -1px;
   position: relative;
   width: fit-content;
+  text-align: start;
+  margin-right: 0px;
 }
 
 .beasiswa-detail .dapat-di-klik-disini {
@@ -217,6 +223,7 @@
   position: relative;
   white-space: nowrap;
   width: 460px;
+  margin-left: -165px;
 }
 
 .beasiswa-detail .span {
@@ -263,12 +270,15 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+  margin-top: -100px;
+  margin-left: 10px;
 }
 
 .beasiswa-detail .button-instance {
   background-color: #4f709c !important;
   gap: unset !important;
   justify-content: space-between !important;
+  margin-top: -100px;
 }
 
 .beasiswa-detail .design-component-instance-node {
@@ -294,6 +304,7 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+  margin-left: 10px;
 }
 
 .beasiswa-detail .div-wrapper {
@@ -371,6 +382,7 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+  margin-left: 10px;
 }
 
 .beasiswa-detail .uang-saku-hingga-rp-wrapper {
@@ -393,6 +405,8 @@
   margin-top: -1px;
   position: relative;
   width: fit-content;
+  text-align: start;
+  padding-bottom: -20px;
 }
 
 .beasiswa-detail .frame-13 {

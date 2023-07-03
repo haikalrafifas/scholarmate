@@ -27,7 +27,7 @@ export const DetailBeasiswa = () => {
           <div className="frame-3">
             <div className="text-wrapper-6">Deskripsi</div>
             <p className="text-wrapper-7">
-              Beasiswa&nbsp;&nbsp;BidikMisi untuk&nbsp;&nbsp;jenjang S1 dengan
+              Beasiswa BidikMisi untuk jenjang S1 dengan
               tipe Fully Funded
             </p>
           </div>
