@@ -61,6 +61,7 @@
   flex-direction: column;
   position: relative;
   width: fit-content;
+  padding-top: 45px;
 }
 
 .profil-pengguna .h-1 {
