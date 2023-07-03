@@ -2,18 +2,10 @@ const express = require("express");
 const router = express.Router();
 const scholarshipsController = require("../../controllers/scholarshipsController");
 
-router.route("/").get(scholarshipsController.getAllScholarships);
+const getParamInfo = (req, res, next) => {
+  res.send(req.query);
+};
 
-router
-  .route("/:negara_tujuan&:order_by")
-  .get(scholarshipsController.getScholarshipOrderBy);
-
-router.route("/:degree").get(scholarshipsController.getScholarshipByDegree);
-
-router
-  .route("/:negara_tujuan")
-  .get(scholarshipsController.getScholarshipByNegaraTujuan);
-
-router.route("/:type").get(scholarshipsController.getScholarshipByType);
+router.route("/").get(scholarshipsController.getScholarshipsInfo);
 
 module.exports = router;
