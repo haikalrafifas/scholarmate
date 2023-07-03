@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: auto;
+  width: 100%;
+  overflow-x: hidden;
 }
   
 .profil-pengguna .div {
