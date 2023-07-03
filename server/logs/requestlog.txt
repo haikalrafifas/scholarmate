@@ -216,3 +216,13 @@
 20230703	18:40:51	9d2fbc05-2215-4328-a012-eb5735fbcc79	GET	undefined	/scholarships?degree=s1&negara_tujuan=in&tipe=ful&urut_berdasarkan=jumlah_pencarian
 20230703	18:41:05	93c7f472-3911-4831-bb6f-61d4417f2e40	GET	undefined	/scholarships?degree=s1&negara_tujuan=in&tipe=ful&urut_berdasarkan=jumlah_pencarian
 20230703	18:44:29	a64d5b50-34c5-4f5d-aac7-94845eebcf1d	GET	undefined	/scholarships
+20230703	20:23:30	93e038ca-170d-4e2b-a764-c458ab1e4392	GET	undefined	/scholarships
+20230703	20:24:00	70f3598d-2de5-42f7-a3a4-d3adf6163442	GET	undefined	/scholarships
+20230703	20:31:51	45c0d525-e4e9-4b76-bf69-54ab8247f66d	GET	undefined	/scholarships?degree=S1&negara_tujuan=am&tipe=full&urut_berdasarkan=jumlah_pencarian
+20230703	20:35:09	e69ea9f7-25ac-4b96-a4d9-f3767decead0	GET	undefined	/scholarships?tipe=full&urut_berdasarkan=jumlah_pencarian
+20230703	20:36:24	36cfe3d6-e9f9-4c3a-b5a1-d69fc7ee8e73	GET	undefined	/scholarships?negara_tujuan=korea&urut_berdasarkan=jumlah_pencarian
+20230703	20:36:58	61e691ff-c509-4f63-8fd0-0b4882416c1d	GET	undefined	/scholarships?negara_tujuan=korea&urut_berdasarkan=jumlah_pencarian
+20230703	20:37:53	75034650-e942-45b9-a89f-6626ab17b531	GET	undefined	/scholarships?negara_tujuan=korea&urut_berdasarkan=jumlah_pencarian
+20230703	20:39:36	9e6cb7f1-dbab-4701-b2dd-b5c25d8d35a7	GET	undefined	/scholarships?negara_tujuan=korea&tipe=part
+20230703	20:42:36	1ed099ef-35b5-419f-9fe1-45c52f45c29a	GET	undefined	/scholarships?negara_tujuan=korea&tipe=part
+20230703	20:42:41	01d2c00f-45d7-4770-a439-926d86a1724d	GET	undefined	/scholarships?negara_tujuan=korea
