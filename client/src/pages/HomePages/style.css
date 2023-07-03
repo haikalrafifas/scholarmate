@@ -1,0 +1,230 @@
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: #FAEEE5;
+  }
+  
+  .section-1{
+    padding-bottom: 50px;
+  }
+
+  .wrapper-welcome h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Pusatkan teks secara horizontal */
+    padding-top: 100px;
+    font-size: 72px;
+    text-align: center; /* Pusatkan teks secara horizontal */
+    word-wrap: break-word; /* Pematahan kata */
+    margin: 60px;
+    margin-top: 30px;
+    color: white;
+  }
+
+  .wrapper-welcome{
+    background-color:#4f709c;
+    padding-bottom: 50px;
+  }
+  
+  .bot-text h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Pusatkan teks secara horizontal */
+    word-wrap: break-word; /* Pematahan kata */
+    font-size: 32px;
+    padding-bottom: 32px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: black;
+  }
+
+  .section-2 {
+    padding-bottom: 150px;
+  }
+  
+  .latar-bel h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    font-size: 56px;
+    margin: 0 auto; /* Membuat container simetris */
+    max-width: 800px; /* Lebar maksimum container */
+    color: black;
+  }
+  
+  .latar-bel-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* sisipkan kode berikut untuk membuat konten terletak di tengah secara horizontal */
+    flex-direction: column;
+    background-color: #4f709c;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 20px;
+  }
+  
+  .latar-bel-text {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .section-3 {
+    padding: 50px 0;
+    padding-bottom: 150px;
+  }
+  
+  .fitur-unggulan h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 56px;
+    margin: 0 auto; /* Membuat container simetris */
+    max-width: 800px; /* Lebar maksimum container */
+    color: black;
+  }
+
+  .square-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  
+  .square {
+    width: 350px;
+    height: 350px;
+    background-color: #4f709c;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .square-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .square-text-exp {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  .see-more-1,
+  .see-more-2,
+  .see-more-3 {
+    padding: 8px 16px;
+    background-color: #4f709c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .see-more-1:hover,
+  .see-more-2:hover,
+  .see-more-3:hover {
+    color: black;
+  }
+
+  .see-more-1{
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+  }
+
+  .see-more-2{
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+  }
+
+  .see-more-3{
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+
+  .section-4{
+    padding-bottom: 150px;
+  }
+
+
+  .about-us h2{
+    color: black;
+    font-size: 56px;
+  }
+
+  .about-us-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    color: black;
+  }
+
+  .footer{
+    padding: 20px;
+    background-color:#4f709c;
+    padding-bottom: 300px;
+  }
+
+  .footer-container{
+    margin: 30px;
+    text-align: left;
+  }
+
+  .phone img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .email img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .abt-scholar{
+    padding-bottom: 30px;
+  }
+
+  .call-us{
+    padding-bottom: 10px;
+  }
+
+  .phone{
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+
+  .email{
+    padding-bottom: 10px;
+  }
