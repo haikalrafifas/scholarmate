@@ -1,51 +1,88 @@
+body{
+  background-color: #FAEEE5;
+}
 
-        .container {
-            background-color: #D8C4B6;
-            opacity: 90%;
-            margin-right: 60px;
-            margin-left: 60px;
-            border-radius: 20px;
-            margin-top: 24px;
-          }
-          
+.container {
+  background-color: #D8C4B6;
+  opacity: 90%;
+  margin-right: 60px;
+  margin-left: 60px;
+  border-radius: 20px;
+  margin-top: 24px;
+}
 
-    
-    .text-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        font-size: 24px;
-    
-      }
-      
-      .centered-text {
-        text-align: center;
-      }
-    
-      .icon-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-      }
-    
-      .cont-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        font-size: 12px;
-        padding-top: 20px;
-      }
-    
-      .button-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin-top: 20px;
-        padding-bottom: 40px;
-        padding-top: 20px;
-      }
-    
-      .button-wrapper button{
-        border: #D8C4B6;
-      }
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
 
+.centered-text {
+  text-align: center;
+}
+
+.icon-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cont-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.button-wrapper button{
+  border: #D8C4B6;
+}
+
+/* Responsiveness for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .container {
+      margin-right: 20px;
+      margin-left: 20px;
+      border-radius: 10px;
+      margin-top: 16px;
+  }
+
+  .text-wrapper {
+      font-size: 20px;
+  }
+
+  .cont-wrapper {
+      font-size: 10px;
+      padding-top: 10px;
+  }
+}
+
+/* Responsiveness for screens smaller than 576px */
+@media only screen and (max-width: 576px) {
+  .container {
+      margin-right: 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+      margin-top: 8px;
+  }
+
+  .text-wrapper {
+      font-size: 18px;
+  }
+
+  .cont-wrapper {
+      font-size: 8px;
+      padding-top: 5px;
+  }
+}
