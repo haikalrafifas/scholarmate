@@ -1,3 +1,6 @@
+*{
+  margin: 0 auto
+}
 .PROSPEK-KARIR {
     background-color: #faeee5;
     display: flex;
@@ -11,8 +14,9 @@
     border: 1px none;
     height: 980px;
     overflow: hidden;
+    height: 647px;
     /* width: 1280px; */
-    width: 100%;
+    padding-bottom: 0;
   }
   
   .PROSPEK-KARIR .frame {
@@ -31,9 +35,12 @@
     background-color: #4f709c;
     border-radius: 825.5px/585.5px;
     /* height: 50rem; */
-    height: 1171px;
+    height: 1080px;
     min-width: 1651px;
     position: relative;
+    right: 135px;
+    bottom: 120px;
+    padding-bottom: 0;
   }
   
   .PROSPEK-KARIR .text-wrapper {
@@ -49,24 +56,29 @@
     text-align: center;
     top: 519px;
     white-space: nowrap;
+    padding-right: 100px;
+    left: 450px;
+    margin-top: 10px;
+    margin-bottom: -100px;
   }
   
   .PROSPEK-KARIR .p {
     color: #ffffff;
     font-family: "Poppins-Bold", Helvetica;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
-    left: 335px;
+    left: 175px;
     letter-spacing: 0;
     line-height: 75px;
     position: absolute;
     text-align: center;
-    top: 835px;
+    top: 800px;
     width: 1048px;
   }
   
   .PROSPEK-KARIR .nav-navbar-instance {
-    left: 185px !important;
+    left: -150px !important;
+    right: 350px;
     position: absolute !important;
     top: 363px !important;
   }
@@ -79,9 +91,10 @@
   
   .PROSPEK-KARIR .search-bar-instance {
     height: 55px !important;
-    left: 607px !important;
+    left: 450px !important;
     position: absolute !important;
-    top: 690px !important;
+    top: 650px !important;
+    padding-top: 10px;
   }
   
   .PROSPEK-KARIR .search-bar-2 {
