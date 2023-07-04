@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100%;
   margin-right: 35px;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 
 .profil-pengguna-edit .div {
@@ -242,7 +242,6 @@
 
 .profil-pengguna-edit .accordion-instance {
   background-color: #9ecbee !important;
-  height: 55px !important;
   width: 460px !important;
 }
 
