@@ -5,6 +5,7 @@
   justify-content: center;
   width: 100%;
   margin-left: -10px;
+  overflow: hidden;
 }
 
 .beasiswa-detail .div {
@@ -239,6 +240,7 @@
   left: 0 !important;
   position: absolute !important;
   top: 0 !important;
+  right: -30px;
 }
 
 .beasiswa-detail .frame-7 {
