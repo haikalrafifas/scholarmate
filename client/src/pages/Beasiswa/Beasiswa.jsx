@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { CardBeasiswa } from "../../components/CardBeasiswa/CardBeasiswa";
 import { NavNavbar } from "../../components/NavNavbar/NavNavbar";
@@ -16,20 +18,25 @@ export const Beasiswa = () => {
             logoLogoClassName="design-component-instance-node"
             property1="with-avatar"
           />
+          <NavNavbar 
+          className="nav-navbar-instance" 
+          property1="with-avatar"
+          />
           <h1 className="h-1">BEASISWA</h1>
         </div>
+		<div className="search-bar-container">
         <SearchBar
           cariJurusanYangClassName="search-bar-2"
           className="search-bar-instance"
           property="panjang"
         />
-        <CardBeasiswa
-          buttonText="S1"
-          className="card-beasiswa-instance"
-          degree="S1"
-          country="Indonesia"
-          vector="https://generation-sessions.s3.amazonaws.com/17cf77a9f6c859392c2dcd3e1f3049e6/img/vector-9.svg"
-        />
+		</div>
+		<div className="search-results">
+		  <div className="card-beasiswa-container">
+			<CardBeasiswa degree="S1" country="Indonesia" />
+			<CardBeasiswa degree="S1" country="Indonesia" />
+		  </div>
+		</div>
         <div className="frame-7">
           <div className="frame-8">
             <div className="text-wrapper-3">Filter</div>
@@ -68,7 +75,7 @@ export const Beasiswa = () => {
             <div className="text-wrapper-4">Tipe Beasiswa</div>
             <div className="frame-11">
               <div className="ellipse-3" />
-              <div className="text-wrapper-6">Beasiswa Sebagian</div>
+              <div className="text-wrapper-5">Beasiswa Sebagian</div>
             </div>
             <div className="frame-11">
               <div className="ellipse-3" />
