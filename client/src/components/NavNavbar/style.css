@@ -2,9 +2,10 @@
   align-items: center;
   background-color: #4f709c;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 8px 24px;
   position: fixed;
+  left: 200px;
   }
 
 
@@ -14,3 +15,7 @@
   position: relative !important;
   width: unset !important;
 }
+
+  .nav-navbar .nav-menu{
+    margin-right: 100px;
+  }

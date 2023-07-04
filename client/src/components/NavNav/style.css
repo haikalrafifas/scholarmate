@@ -2,12 +2,19 @@
   align-items: center;
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   width: fit-content;
   margin-right: 56px;
+  padding-left: 440px;
+  left: 43px;
 }
 
 .nav-nav .nav-list-item-instance {
   color: #ffffff !important;
+}
+
+.nav-nav .button-instance {
+  /* Properti CSS lainnya */
+  margin-right: 0; /* Ubah nilai margin-right sesuai kebutuhan */
 }
