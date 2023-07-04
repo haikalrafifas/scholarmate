@@ -66,7 +66,7 @@ export const ProfilPenggunaLihatPreferensi = () => {
                 hasTitle={false}
                 inputTextClassName="input-field-3"
                 property="input-text"
-                text="S1"
+                value="S1"
               />
             </div>
             <div className="frame-4">
@@ -79,7 +79,7 @@ export const ProfilPenggunaLihatPreferensi = () => {
                 hasTitle={false}
                 inputTextClassName="input-field-3"
                 property="input-text"
-                text="Beasiswa Penuh"
+                value="Beasiswa Penuh"
               />
             </div>
             <div className="frame-4">
@@ -92,7 +92,7 @@ export const ProfilPenggunaLihatPreferensi = () => {
                 hasTitle={false}
                 inputTextClassName="input-field-3"
                 property="input-text"
-                text="Belanda"
+                value="Belanda"
               />
             </div>
           </div>

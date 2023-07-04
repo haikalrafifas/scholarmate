@@ -27,8 +27,9 @@
   left: 0;
   object-fit: cover;
   position: absolute;
-  top: 0;
+  top: -5px;
   width: 1280px;
+  
 }
 
 .profil-pengguna .frame-6 {
