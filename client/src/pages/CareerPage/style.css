@@ -78,8 +78,8 @@
   }
   
   .PROSPEK-KARIR .nav-navbar-instance {
-    left: -150px !important;
-    right: 350px;
+    left: 10px !important;
+    right: 300px;
     position: absolute !important;
     top: 363px !important;
   }
