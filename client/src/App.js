@@ -6,14 +6,15 @@ import "./App.css";
 // import { HomePages } from "./pages/HomePages/HomePages"
 // import { LoginSuccessPages } from "./pages/LoginSuccessPages/LoginSuccessPages"
 // import { ProfilJurusan  } from "./pages/ProfilJurusan/ProfilJurusan"
+// import { ProfilJurusanError } from "./pages/ProfilJurusanError/ProfilJurusanError"; 
 //  import { LoginPage } from "./pages/LoginPage/LoginPage"
 // import { SignupPage } from "./pages/SignupPage/SignupPage"
-// import { ProfilJurusanView } from "./pages/ProfilJurusanView/ProfilJurusanView";
+import { ProfilJurusanView } from "./pages/ProfilJurusanView/ProfilJurusanView";
 // import {Beasiswa } from "./pages/Beasiswa/Beasiswa"
 // import { ProfilPenggunaSimpanBeasiswa } from "./pages/ProfilPenggunaSimpanBeasiswa/ProfilPenggunaSimpanBeasiswa"
 // import { ProfilPenggunaEditPreferensi } from "./pages/ProfilPenggunaEditPreferensi/ProfilPenggunaEditPreferensi"
 // import { ProfilPenggunaLihatPreferensi } from "./pages/ProfilPenggunaLihatPreferensi/ProfilPenggunaLihatPreferensi"
-
+// import { ProfilPengguna } from "./pages/ProfilPengguna/ProfilPengguna"
 // selalu hapus import code yang ingin dites dari direktori lain.
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Mulai masukkan code yang ingin dites di bawah baris ini */}
+
+
+
         {/* <Beasiswa /> */}
         {/* DONE */}
 
@@ -48,7 +52,10 @@ function App() {
         {/* <ProfilJurusan/> */}
         {/* DONE  */}
 
-        {/* <ProfilJurusanView/> */}
+        {/* <ProfilJurusanError/> */}
+        {/* DONE  */}
+
+        <ProfilJurusanView/>
         {/* DONE */}
 
         {/* <ProfilPenggunaSimpanBeasiswa/>  */}
@@ -58,6 +65,9 @@ function App() {
         {/* 80 %*/}
 
         {/* <ProfilPenggunaLihatPreferensi/> */}
+        {/* DONE */}
+
+        {/* <ProfilPengguna/> */}
         {/* DONE */}
 
       </header>

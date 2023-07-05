@@ -1,5 +1,5 @@
 import React from "react";
-import { CardRumpun } from "../../components/CardRumpun/CardRumpun";
+import { CardJurusan } from "../../components/CardJurusan/CardJurusan";
 import { NavNavbar } from "../../components/NavNavbar/NavNavbar";
 import "./style.css";
 
@@ -21,25 +21,15 @@ export const ProfilJurusanView = () => {
               />
             </div>
           </div>
-          <CardRumpun
+          <CardJurusan
             className="card-rumpun-instance"
-            namaRumpun="ilmu-komputer"
-            text="TEKNIK INFORMATIKA"
+            image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
+            description="lorem ipsum"
           />
-          <CardRumpun
-            className="card-rumpun-2"
-            namaRumpun="ilmu-komputer"
-            text="SISTEM INFORMASI"
-          />
-          <CardRumpun
-            className="card-rumpun-3"
-            namaRumpun="ilmu-komputer"
-            text="TEKNIK KOMPUTER"
-          />
-          <CardRumpun
-            className="card-rumpun-4"
-            namaRumpun="ilmu-komputer"
-            text="TEKNOLOGI INFORMASI"
+          <CardJurusan
+            className="card-rumpun-1"
+            image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
+            description="lorem ipsum"
           />
         </div>
       </div>
