@@ -24,6 +24,8 @@ export const SignupPage = () => {
             <InputField title="Email" type="email" placeholder="Silakan masukkan email..." />
             <InputField title="Nama Lengkap" type="text" placeholder="Silakan masukkan nama lengkap..." />
             <InputField title="Kata Sandi" type="password" placeholder="Silakan masukkan kata sandi..." />
+            <InputField title="Konfirmasi Kata Sandi" type="password" placeholder="Silakan masukkan ulang kata sandi..." />
+
 
             <div className="frame-2">
               <div className="rectangle-2" />
