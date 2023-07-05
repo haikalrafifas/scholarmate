@@ -10,7 +10,6 @@ export const NavNav = ({ hasLoggedIn, avatar }) => {
     <div className="nav-nav">
       <NavListItem listItemClassName="nav-list-item-instance" text="Beasiswa" />
       <NavListItem listItemClassName="nav-list-item-instance" text="Jurusan" />
-      <NavListItem listItemClassName="nav-list-item-instance" text="Karir" />
       {!hasLoggedIn && <NavListItem listItemClassName="nav-list-item-instance" text="Sign In" />}
       {hasLoggedIn
         ? <ProfilePicture className="profile-picture-instance" property1="avatar-on-navbar" avatar={avatar} />

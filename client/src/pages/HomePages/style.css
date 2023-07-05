@@ -8,6 +8,13 @@
     padding-bottom: 50px;
   }
 
+  .nav-navbar-instance{
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -30px;
+  }
+
   .wrapper-welcome h1 {
     display: flex;
     justify-content: center;
@@ -25,6 +32,7 @@
   .wrapper-welcome{
     background-color:#4f709c;
     padding-bottom: 50px;
+    margin-top: -40px;
   }
   
   .bot-text h2 {

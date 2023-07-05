@@ -59,6 +59,7 @@
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  right: 50px;
 }
 
 .PROFIL-JURUSAN-VIEW .text-wrapper {
@@ -93,6 +94,7 @@
   position: absolute !important;
   top: 391px !important;
   justify-content: space-between;
+  margin-left: 50px;
 }
 
 .PROFIL-JURUSAN-VIEW .design-component-instance-node {

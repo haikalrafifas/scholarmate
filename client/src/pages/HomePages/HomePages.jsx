@@ -1,10 +1,14 @@
 import { NavNavbar } from "../../components/NavNavbar/NavNavbar"
 import "././style.css"
+import React from "react"
 export const HomePages = () => {
     return (
         <div className="container">
         <nav className="nav-bar">
-            <NavNavbar/>
+        <NavNavbar
+            className="nav-navbar-instance"
+            property1="nav-header"
+        />
         </nav>
             <section className="section-1">
                 <div className="wrapper-welcome">
