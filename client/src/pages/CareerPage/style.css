@@ -39,8 +39,8 @@
     height: 1080px;
     min-width: 1651px;
     position: relative;
-    right: 135px;
-    bottom: 120px;
+    right: 100px;
+    bottom: 275px;
     padding-bottom: 0;
   }
   
@@ -64,7 +64,7 @@
   }
   
   .PROSPEK-KARIR .p {
-    color: #ffffff;
+    color: black;
     font-family: "Poppins-Bold", Helvetica;
     font-size: 40px;
     font-weight: 700;
@@ -75,6 +75,8 @@
     text-align: center;
     top: 800px;
     width: 1048px;
+    margin-top: 30px;
+
   }
   
   .PROSPEK-KARIR .nav-navbar-instance {
