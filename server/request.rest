@@ -1,5 +1,5 @@
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWEiOiJOdWdyYWhhIEFkaGl0YW1hIiwiZW1haWwiOiJ0ZXNAZ21haWwuY29tIiwiaWF0IjoxNjg4NTMyNjI1LCJleHAiOjE2ODg1MzI2NTV9.SXTe9IN0Zdgrypu787n1bCwm8X_eqfc3xDG5o14rHwY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWEiOiJOdWdyYWhhIEFkaGl0YW1hIiwiZW1haWwiOiJ0ZXNAZ21haWwuY29tIiwiaWF0IjoxNjg4NTQ5MjQ1LCJleHAiOjE2ODg1NDkyNzV9.f4DL49ttFGz5zWgt7TuqBtN_vzL9v70n3FzudAr3wmw
 
 ###
 POST http://localhost:3000/users
@@ -26,3 +26,37 @@ GET http://localhost:3000/users/token
 
 ###
 DELETE http://localhost:3000/users/logout
+
+###
+
+GET http://localhost:3000/scholarships
+
+###
+GET http://localhost:3000/scholarships?urut_berdasarkan=jumlah_pencarian
+
+###
+GET http://localhost:3000/scholarships?tipe=full
+
+###
+GET http://localhost:3000/scholarships?negara_tujuan=In
+
+###
+GET http://localhost:3000/scholarships?degree=S1&negara_tujuan=Am
+
+###
+GET http://localhost:3000/scholarships?degree=S1&tipe=par
+
+###
+GET http://localhost:3000/scholarships?degree=S3&urut_berdasarkan=jumlah_pencarian
+
+###
+GET http://localhost:3000/scholarships?negara_tujuan=In&tipe=full
+
+###
+GET http://localhost:3000/scholarships?negara_tujuan=In&urut_berdasarkan=jumlah_pencarian
+
+###
+GET http://localhost:3000/scholarships?tipe=full&urut_berdasarkan=jumlah_pencarian
+
+###
+GET http://localhost:3000/scholarships?degree=s1&negara_tujuan=in&tipe=full&urut_berdasarkan=tanggal_akhir_daftar

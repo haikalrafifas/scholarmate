@@ -1,82 +1,126 @@
+const Sequilize = require("sequelize");
 const db = require("../config/db");
 
-class Scholarships {
-  static getAllScholarships() {
-    let sql = "SELECT * FROM beasiswa LIMIT 10;";
+const { DataTypes } = Sequilize;
 
-    return db.execute(sql);
-  }
+const Beasiswa = db.define(
+  "scholarships",
+  {
+    nama_beasiswa: {
+      type: DataTypes.STRING,
+    },
+    pemberi_beasiswa: {
+      type: DataTypes.STRING,
+    },
+    negara_tujuan: {
+      type: DataTypes.STRING,
+    },
+    tipe_beasiswa: {
+      type: DataTypes.STRING,
+    },
+    tingkat_pendidikan: {
+      type: DataTypes.STRING,
+    },
+    tanggal_mulai_daftar: {
+      type: DataTypes.DATE,
+    },
+    tanggal_akhir_daftar: {
+      type: DataTypes.DATE,
+    },
+    persyaratan: {
+      type: DataTypes.STRING(512),
+    },
+    keuntungan: {
+      type: DataTypes.TEXT,
+    },
+    link_pendaftaran: {
+      type: DataTypes.STRING(512),
+    },
+    jumlah_pencarian: {
+      type: DataTypes.INTEGER,
+    },
+  },
+  { freezeTabelName: true },
+  { timestamps: false }
+);
 
-  static getScholarshipByCountry(country) {
-    let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' LIMIT 10;`;
+// class Scholarships {
+//   static getAllScholarships() {
+//     let sql = "SELECT * FROM beasiswa LIMIT 10;";
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByCountryAndType(country, type) {
-    let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}' AND tipe_beasiswa LIKE '%${type}%' LIMIT 10;`;
+//   static getScholarshipByCountry(country) {
+//     let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByCountryAndOrderBy(country, order_by) {
-    let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' ORDER BY '${order_by}' DESC LIMIT 10;`;
+//   static getScholarshipByCountryAndType(country, type) {
+//     let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}' AND tipe_beasiswa LIKE '%${type}%' LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByDegree(degree) {
-    let sql = `SELECT * FROM beasiswa WHERE tingkat_pendidikan LIKE '%${degree}%' LIMIT 10;`;
+//   static getScholarshipByCountryAndOrderBy(country, order_by) {
+//     let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' ORDER BY '${order_by}' DESC LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByDegreeAndCountry(degree, country) {
-    let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' AND tingkat_pendidikan LIKE '%${degree}%';`;
+//   static getScholarshipByDegree(degree) {
+//     let sql = `SELECT * FROM beasiswa WHERE tingkat_pendidikan LIKE '%${degree}%' LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByDegreeAndType(degree, type) {
-    let sql = `SELECT * FROM beasiswa WHERE tingkat_pendidikan LIKE '%${degree}' AND tipe_beasiswa LIKE '%${type}%' LIMIT 10;`;
+//   static getScholarshipByDegreeAndCountry(degree, country) {
+//     let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' AND tingkat_pendidikan LIKE '%${degree}%';`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByDegreeAndOrderBy(degree, order_by) {
-    let sql = `SELECT * FROM beasiswa WHERE tingkat_pendidikan LIKE '%${degree}' ORDER BY ${order_by} DESC LIMIT 10;`;
+//   static getScholarshipByDegreeAndType(degree, type) {
+//     let sql = `SELECT * FROM beasiswa WHERE tingkat_pendidikan LIKE '%${degree}' AND tipe_beasiswa LIKE '%${type}%' LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByType(type) {
-    let sql = `SELECT * FROM beasiswa WHERE tipe_beasiswa LIKE '%${type}%' LIMIT 10;`;
+//   static getScholarshipByDegreeAndOrderBy(degree, order_by) {
+//     let sql = `SELECT * FROM beasiswa WHERE tingkat_pendidikan LIKE '%${degree}' ORDER BY ${order_by} DESC LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByTypeAndOrderBy(type, order_by) {
-    let sql = `SELECT * FROM beasiswa WHERE tipe_beasiswa LIKE '%${type}%' ORDER BY ${order_by} DESC LIMIT 10;`;
+//   static getScholarshipByType(type) {
+//     let sql = `SELECT * FROM beasiswa WHERE tipe_beasiswa LIKE '%${type}%' LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipByDegreeAndCountryAndTypeAndOrderBy(
-    degree,
-    country,
-    type,
-    order_by
-  ) {
-    let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' AND tingkat_pendidikan LIKE '%${degree}%' AND tipe_beasiswa LIKE '%${type}%' ORDER BY ${order_by} DESC LIMIT 10;`;
+//   static getScholarshipByTypeAndOrderBy(type, order_by) {
+//     let sql = `SELECT * FROM beasiswa WHERE tipe_beasiswa LIKE '%${type}%' ORDER BY ${order_by} DESC LIMIT 10;`;
 
-    return db.execute(sql);
-  }
+//     return db.execute(sql);
+//   }
 
-  static getScholarshipOrderBy(order_by) {
-    let sql = `SELECT * FROM beasiswa ORDER BY ${order_by} DESC LIMIT 10;`;
+//   static getScholarshipByDegreeAndCountryAndTypeAndOrderBy(
+//     degree,
+//     country,
+//     type,
+//     order_by
+//   ) {
+//     let sql = `SELECT * FROM beasiswa WHERE negara_tujuan LIKE '%${country}%' AND tingkat_pendidikan LIKE '%${degree}%' AND tipe_beasiswa LIKE '%${type}%' ORDER BY ${order_by} DESC LIMIT 10;`;
 
-    return db.execute(sql);
-  }
-}
+//     return db.execute(sql);
+//   }
 
-module.exports = Scholarships;
+//   static getScholarshipOrderBy(order_by) {
+//     let sql = `SELECT * FROM beasiswa ORDER BY ${order_by} DESC LIMIT 10;`;
+
+//     return db.execute(sql);
+//   }
+// }
+
+module.exports = Beasiswa;

@@ -6,6 +6,7 @@ const app = express();
 const { logEvents, logger } = require("./middleware/logEvents");
 const { errorHandler } = require("./middleware/errorHandler");
 const db = require("./config/db");
+const Beasiswa = require("./models/scholarshipsModel");
 dotenv.config(); //ALLOWS ENVIROMENT VARIABLE TO BE SET ON PROCESS.ENV
 
 try {
