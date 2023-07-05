@@ -60,3 +60,15 @@ GET http://localhost:3000/scholarships?tipe=full&urut_berdasarkan=jumlah_pencari
 
 ###
 GET http://localhost:3000/scholarships?degree=s1&negara_tujuan=in&tipe=full&urut_berdasarkan=tanggal_akhir_daftar
+
+###
+GET http://localhost:3000/profil-jurusan
+
+###
+GET http://localhost:3000/profil-jurusan/621942f9-199a-11ee-8c62-107b44e05fcc
+
+###
+GET http://localhost:3000/profil-jurusan/621942f9-199a-11ee-8c62-107b44e05fcc/10ad72c2-53f7-4d50-a250-fc2beee1101b
+
+###
+GET http://localhost:3000/profil-jurusan/621942f9-199a-11ee-8c62-107b44e05fcc/10ad72c2-53f7-4d50-a250-fc2beee1101b/tempat-kuliah

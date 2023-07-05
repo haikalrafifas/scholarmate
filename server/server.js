@@ -6,7 +6,6 @@ const app = express();
 const { logEvents, logger } = require("./middleware/logEvents");
 const { errorHandler } = require("./middleware/errorHandler");
 const db = require("./config/db");
-const Beasiswa = require("./models/scholarshipsModel");
 dotenv.config(); //ALLOWS ENVIROMENT VARIABLE TO BE SET ON PROCESS.ENV
 
 try {
@@ -32,6 +31,7 @@ app.use(errorHandler);
 app.use("/scholarships", require("./routes/api/scholarships"));
 app.use("/program-studi", require("./routes/api/programStudi"));
 app.use("/users", require("./routes/api/user"));
+app.use("/profil-jurusan", require("./routes/api/profilJurusan"));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));
