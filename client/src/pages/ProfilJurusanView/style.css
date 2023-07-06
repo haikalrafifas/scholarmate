@@ -1,9 +1,10 @@
 .PROFIL-JURUSAN-VIEW {
   background-color: #faeee5;
-  display: flex;
+  display: flexbox;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .PROFIL-JURUSAN-VIEW .overlap-wrapper {
@@ -104,26 +105,15 @@
   width: unset !important;
 }
 
+.card-jurusan-wrapper {
+	display: flex;
+  flex-direction: row;
+	gap: 2rem;
+  margin-left: 180px;
+}
+
 .PROFIL-JURUSAN-VIEW .card-rumpun-instance {
-  left: 398px !important;
-  position: absolute !important;
-  top: 841px !important;
-}
-
-.PROFIL-JURUSAN-VIEW .card-rumpun-2 {
-  left: 598px !important;
-  position: absolute !important;
-  top: 836px !important;
-}
-
-.PROFIL-JURUSAN-VIEW .card-rumpun-3 {
-  left: 798px !important;
-  position: absolute !important;
-  top: 836px !important;
-}
-
-.PROFIL-JURUSAN-VIEW .card-rumpun-4 {
-  left: 998px !important;
-  position: absolute !important;
-  top: 836px !important;
+  margin-top: 900px;
+  position: relative;
+  width: 12%;
 }

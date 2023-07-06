@@ -25,22 +25,22 @@
               <CardJurusan
                 className="card-rumpun-instance"
                 image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="lorem ipsum"
+                description="Sistem informasi adalah ..."
               />
               <CardJurusan
-                className="card-rumpun-2"
+                className="card-rumpun-instance"
                 image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="lorem ipsum"
+                description="Teknik Informatika adalah..."
               />
               <CardJurusan
-                className="card-rumpun-3"
+                className="card-rumpun-instance"
                 image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="lorem ipsum"
+                description="Teknologi Informasi adalah..."
               />
               <CardJurusan
-                className="card-rumpun-4"
+                className="card-rumpun-instance"
                 image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="lorem ipsum"
+                description="Sistem Komputer adalah..."
               />
             </div>
           </div>
