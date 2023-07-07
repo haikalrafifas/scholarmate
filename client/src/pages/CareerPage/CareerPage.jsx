@@ -10,7 +10,7 @@ export const CareerPage = () => {
         <div className="frame">
           <div className="ellipse" />
           <h1 className="text-wrapper">PROSPEK KARIR</h1>
-          <p className="p">Cari informasi lengkap mengenai Karir yang kamu minati</p>
+          <p className="p">Cari informasi lengkap mengenai Karir yang Kamu minati</p>
           <NavNavbar hasLoggedIn={true} avatar="" className="nav-navbar-instance" />
           <SearchBar
             className="search-bar-instance"

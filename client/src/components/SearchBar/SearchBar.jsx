@@ -2,14 +2,15 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const SearchBar = ({ property, className, placeholder }) => {
+export const SearchBar = ({ property, className, value }) => {
   return (
-    <div className={`search-bar ${property} ${className}`}>
+    <div className={`search-bar ${property} ${className} ${value}`}>
       {property === "icon-kanan" && (
         <input
           type="text"
           className="cari-jurusan-yang"
           placeholder="Cari Jurusan yang ingin kamu ketahui...."
+          value={value}
         />
       )}
 
@@ -23,7 +24,8 @@ export const SearchBar = ({ property, className, placeholder }) => {
         <input
           type="text"
           className="cari-jurusan-yang"
-          placeholder={placeholder}
+          placeholder="Cari Jurusan yang ingin Kamu ketahui..."
+          value={value}
         />
       )}
 
@@ -32,6 +34,7 @@ export const SearchBar = ({ property, className, placeholder }) => {
           type="text"
           className="long"
           placeholder="Cari Beasiswa atau negara tujuan... "
+          value={value}
         />
       )}
     </div>

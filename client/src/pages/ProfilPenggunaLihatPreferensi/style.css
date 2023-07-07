@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .profil-pengguna-edit .div {
@@ -29,6 +30,7 @@
   position: absolute;
   top: 0;
   width: 1280px;
+  margin-top: -1px;
 }
 
 .profil-pengguna-edit .frame-2 {
@@ -61,6 +63,8 @@
   flex-direction: column;
   position: relative;
   width: fit-content;
+  padding-top: 40px;
+  margin-bottom: -40px;
 }
 
 .profil-pengguna-edit .text-wrapper {
@@ -92,12 +96,16 @@
   height: 37px;
   min-width: 37px;
   position: relative;
+  margin-top: -20px;
 }
 
 .profil-pengguna-edit .nav-navbar-instance {
   left: 0 !important;
   position: absolute !important;
   top: 0 !important;
+  padding-right: 0px;
+  left: 50px;
+  right: 0px;
 }
 
 .profil-pengguna-edit .frame-5 {
@@ -200,6 +208,7 @@
   text-decoration: underline;
   white-space: nowrap;
   width: fit-content;
+  margin-bottom : -50px;
 }
 
 .profil-pengguna-edit .frame-8 {
@@ -209,6 +218,8 @@
   gap: 12px;
   position: relative;
   width: fit-content;
+  margin: -20px;
+  margin-bottom: 50px; /* Menambahkan jarak ke input field ke-3 */
 }
 
 .profil-pengguna-edit .frame-9 {
@@ -223,6 +234,7 @@
 .profil-pengguna-edit .text-wrapper-6 {
   color: #000000;
   font-family: "Poppins", Helvetica;
+  left: -8px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0;
@@ -231,10 +243,12 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+  margin-bottom: -20px;
 }
 
 .profil-pengguna-edit .input-field-instance {
   width: 460px !important;
+  margin-bottom: -20px;
 }
 
 .profil-pengguna-edit .input-field-2 {
@@ -256,6 +270,7 @@
   background-color: #4f709c !important;
   height: 50px !important;
   width: 400px !important;
+  padding-top: 20;
 }
 
 .profil-pengguna-edit .button-3 {
@@ -264,3 +279,5 @@
   line-height: 36px !important;
   margin-top: -2px !important;
 }
+
+

@@ -20,7 +20,7 @@ export const LoginSuccessPages = () => {
           <h1>Klik Tombol Untuk Melanjutkan</h1>
         </div>
         <div className="button-wrapper">
-          <Button text="masuk" property1="primary" onClick={handleClick} />
+          <Button text="Masuk" property1="primary" onClick={handleClick} />
         </div>
       </div>
     </div>

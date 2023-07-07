@@ -87,8 +87,7 @@
 }
 
 .card-beasiswa .frame-3 {
-  align-items: flex-start;
-  align-self: stretch;
+  text-align: start;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -124,16 +123,17 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   padding: 16px;
   position: relative;
   width: fit-content;
 }
 
 .card-beasiswa .frame-5 {
-  align-items: center;
   display: flex;
-  gap: 2px;
+  justify-content: flex-start;
+  text-align: start;
+  gap: 5px;
   height: 19px;
   position: relative;
   width: 310px;

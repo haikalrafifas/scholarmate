@@ -48,7 +48,7 @@
   .accordion .img {
     align-self: stretch;
     height: 1px;
-    min-width: 768px;
+    min-width: 100px;
     object-fit: cover;
     position: relative;
   }

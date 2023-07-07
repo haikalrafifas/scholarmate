@@ -2,17 +2,18 @@
   align-items: center;
   background-color: #4f709c;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 8px 24px;
-  position: fixed; /* Navbar tetap di atas halaman */
-  top: 0; /* Atur posisi navbar di bagian atas */
-  width: 100%; /* Gunakan lebar penuh */
-  z-index: 999; /* Atur z-index untuk menentukan tumpukan elemen */
-}
+  position: fixed;
+  }
+
 
 .nav-navbar .logo-instance {
   background-image: url(https://generation-sessions.s3.amazonaws.com/f2ca049efd039528e874eef19425eca5/img/wordmark-4.svg) !important;
   min-width: 131px !important;
   position: relative !important;
   width: unset !important;
+  left: 10px;
 }
+
+

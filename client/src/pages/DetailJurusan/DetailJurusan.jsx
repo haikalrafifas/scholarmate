@@ -9,7 +9,7 @@ export const DetailJurusan = () => {
       <div className="div">
         <div className="overlap-group">
           <p className="section-prospek">
-            section 4 ( Prospek karir{"{"}hyperlink{"}"} )
+            Section 4 ( Prospek karir{"{"}hyperlink{"}"} )
           </p>
         </div>
         <img

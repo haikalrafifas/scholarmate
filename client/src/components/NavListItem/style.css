@@ -6,12 +6,13 @@
   padding: 10px;
   position: relative;
   width: fit-content;
+  padding-left: 20px;
 }
 
 .nav-list-item .list-item {
   color: #7c8db0;
   font-family: "Source Code Pro", Helvetica;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 45px;

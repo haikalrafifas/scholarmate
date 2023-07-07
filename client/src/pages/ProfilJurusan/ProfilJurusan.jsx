@@ -10,7 +10,7 @@ export const ProfilJurusan = () => {
       <div className="div">
         <div className="p-wrapper">
           <p className="p">
-            Apabila kamu membaca profil jurusan, kamu akan menemukan informasi
+            Apabila Kamu membaca profil jurusan, Kamu akan menemukan informasi
             yang dapat membantu kamu dalam menentukan jurusan yang dituju
           </p>
         </div>

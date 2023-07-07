@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const InputField = ({ title, type, placeholder }) => {
+export const InputField = ({ title, type, placeholder, value }) => {
   return (
     <div className="wrapper">
       <div className="input-field">
@@ -10,7 +10,7 @@ export const InputField = ({ title, type, placeholder }) => {
         <div className="frame">
           <div className="input-password">
             <>
-              <input type={type} placeholder={placeholder} />
+              <input type={type} placeholder={placeholder} value={value} />
               {type === 'password' && 
                 <img
                   className="icon"

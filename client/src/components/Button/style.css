@@ -11,7 +11,7 @@
 }
 
 .button:hover {
-  background-color: #4F709C;
+  background-color: black;
   color: #ffffff;
 }
 
@@ -55,6 +55,7 @@
 
 .button.primary {
   width: fit-content;
+  padding-right: -20px;
 }
 
 .button.with-logo-left {

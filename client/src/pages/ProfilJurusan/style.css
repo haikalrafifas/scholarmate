@@ -38,6 +38,7 @@
   position: relative;
   text-align: center;
   width: 972px;
+  padding-top: 16px;
 }
 
 .PROFIL-JURUSAN-VIEW .frame-2 {
@@ -67,6 +68,8 @@
   height: 782px;
   min-width: 1651px;
   position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .PROFIL-JURUSAN-VIEW .h-1-wrapper {
@@ -92,11 +95,12 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+  margin: 20px;
 }
 
 .PROFIL-JURUSAN-VIEW .nav-navbar-instance {
   height: 75px !important;
-  left: 202px !important;
+  left: 180px !important;
   position: absolute !important;
   top: 407px !important;
   width: 1273px !important;

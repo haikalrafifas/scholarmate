@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .profil-pengguna .div-2 {
@@ -27,8 +28,10 @@
   left: 0;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  width: 1280px;
+  top: -5px;
+  width: 1263px;
+  right: 0px;
+  
 }
 
 .profil-pengguna .frame-6 {
@@ -61,6 +64,7 @@
   flex-direction: column;
   position: relative;
   width: fit-content;
+  padding-top: 45px;
 }
 
 .profil-pengguna .h-1 {
@@ -98,6 +102,11 @@
   left: 0 !important;
   position: absolute !important;
   top: 0 !important;
+  padding-right: 0px;
+  left: 50px;
+  right: 0px;
+
+
 }
 
 .profil-pengguna .frame-9 {
