@@ -6,7 +6,7 @@ import "./App.css";
 // import { HomePages } from "./pages/HomePages/HomePages"
 // import { LoginSuccessPages } from "./pages/LoginSuccessPages/LoginSuccessPages"
 // import { ProfilJurusan  } from "./pages/ProfilJurusan/ProfilJurusan"
-// import { ProfilJurusanError } from "./pages/ProfilJurusanError/ProfilJurusanError"; 
+// import { ProfilJurusanError } from "./pages/ProfilJurusanError/ProfilJurusanError";
 //  import { LoginPage } from "./pages/LoginPage/LoginPage"
 // import { SignupPage } from "./pages/SignupPage/SignupPage"
 import { ProfilJurusanView } from "./pages/ProfilJurusanView/ProfilJurusanView";
@@ -22,8 +22,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Mulai masukkan code yang ingin dites di bawah baris ini */}
-
-
 
         {/* <Beasiswa /> */}
         {/* DONE */}
@@ -55,7 +53,7 @@ function App() {
         {/* <ProfilJurusanError/> */}
         {/* DONE  */}
 
-        <ProfilJurusanView/>
+        <ProfilJurusanView />
         {/* DONE */}
 
         {/* <ProfilPenggunaSimpanBeasiswa/>  */}
@@ -69,7 +67,6 @@ function App() {
 
         {/* <ProfilPengguna/> */}
         {/* DONE */}
-
       </header>
     </div>
   );
