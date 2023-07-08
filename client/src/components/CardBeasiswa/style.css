@@ -9,6 +9,7 @@
   padding: 16px;
   position: relative;
   width: fit-content;
+  max-width: 23rem;
 }
 
 .card-beasiswa .frame {

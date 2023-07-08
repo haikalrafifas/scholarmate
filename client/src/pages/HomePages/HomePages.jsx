@@ -1,5 +1,5 @@
 import { NavNavbar } from "../../components/NavNavbar/NavNavbar"
-import "././style.css"
+import "./style.css"
 import React from "react"
 export const HomePages = () => {
     return (
@@ -39,17 +39,17 @@ export const HomePages = () => {
                         <div className="square">
                             <div className="square-text">Pencarian Beasiswa</div>
                             <div className="square-text-exp">Pada fitur ini , User dapat mencari beasiswa yang tersedia berdasarkan kriteria (Prodi, negara tujuan, dll) tertentu yang dapat dipilih oleh user. </div>
-                            <button className="see-more-1">See more</button>
+                            <a href="/beasiswa" className="see-more-1">See more</a>
                         </div>
                         <div className="square">
                             <div className="square-text">Profil Jurusan</div>
                             <div className="square-text-exp">Pada fitur ini , User dapat mencari jurusan yang ingin dituju dengan cara memilih cards yang tersedia maupun menelusuri di search menu, untuk mengetahui informasi lengkap mengenai jurusan tersebut.</div>
-                            <button className="see-more-2">See more</button>
+                            <a href="/jurusan" className="see-more-2">See more</a>
                         </div>
                         <div className="square">
                             <div className="square-text">Prospek Karir</div>
                             <div className="square-text-exp">Pada fitur ini , User dapat mencari informasi mengenai jenjang karir yang akan dijalani oleh mahasiswa setelah lulus dari jurusan tertentu.</div>
-                            <button className="see-more-3">See more</button>
+                            <a href="/" className="see-more-3">See more</a>
                         </div>
                     </div>
                 </div>

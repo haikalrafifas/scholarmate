@@ -126,6 +126,46 @@ const Universitas = db.define(
   }
 );
 
+// Model Karir
+const Karir = db.define(
+  "Karir",
+  {
+    karir_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      primaryKey: true,
+    }
+  },
+  {
+    tableName: "karir",
+    timestamps: false,
+  }
+)
+
+// Model ProspekKarir
+const ProspekKarir = db.define(
+  "ProspekKarir",
+  {
+    prospek_karir_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      primaryKey: true,
+    },
+    prodi_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+    },
+    karir_id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+    }
+  },
+  {
+    tableName: "prospek_karir",
+    timestamps: false,
+  }
+);
+
 // Hubungan antara tabel ProgramStudi dan RumpunProdi melalui Rumpun
 ProgramStudi.hasMany(RumpunProdi, {
   foreignKey: "prodi_id",
@@ -162,6 +202,47 @@ ProgramStudi.belongsToMany(Rumpun, {
   foreignKey: "prodi_id",
 });
 
+// Hubungan antara tabel TempatKuliah dan Universitas
+Universitas.hasMany(TempatKuliah, {
+  foreignKey: "universitas_id",
+});
+TempatKuliah.belongsTo(Universitas, {
+  foreignKey: "universitas_id",
+});
+
+// Hubungan antara tabel Rumpun dan RumpunProdi
+RumpunProdi.hasMany(Rumpun, {
+  foreignKey: "rumpun_id",
+});
+Rumpun.belongsTo(RumpunProdi, {
+  foreignKey: "rumpun_id",
+});
+
+// Hubungan antara tabel ProgramStudi dan Karir melalui ProspekKarir
+Karir.belongsToMany(ProgramStudi, {
+  through: ProspekKarir,
+  foreignKey: "karir_id",
+})
+ProgramStudi.belongsToMany(Karir, {
+  through: ProspekKarir,
+  foreignKey: "prodi_id",
+})
+
+// Hubungan antara tabel Karir dan ProspekKarir
+Karir.hasMany(ProspekKarir, {
+  foreignKey: "karir_id",
+});
+ProspekKarir.belongsTo(Karir, {
+  foreignKey: "karir_id",
+});
+
+ProgramStudi.hasMany(ProspekKarir, {
+  foreignKey: "prodi_id",
+});
+ProspekKarir.belongsTo(ProgramStudi, {
+  foreignKey: "prodi_id",
+});
+
 // Ekspor model-model
 module.exports = {
   ProgramStudi,
@@ -169,4 +250,6 @@ module.exports = {
   RumpunProdi,
   TempatKuliah,
   Universitas,
+  Karir,
+  ProspekKarir,
 };

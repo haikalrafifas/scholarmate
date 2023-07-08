@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const SearchBar = ({ property, className, value }) => {
+export const SearchBar = ({ property, className, name, value, onChange }) => {
   return (
     <div className={`search-bar ${property} ${className} ${value}`}>
       {property === "icon-kanan" && (
@@ -26,6 +26,7 @@ export const SearchBar = ({ property, className, value }) => {
           className="cari-jurusan-yang"
           placeholder="Cari Jurusan yang ingin Kamu ketahui..."
           value={value}
+          onChange={onChange}
         />
       )}
 
@@ -34,6 +35,7 @@ export const SearchBar = ({ property, className, value }) => {
           type="text"
           className="long"
           placeholder="Cari Beasiswa atau negara tujuan... "
+          name={name}
           value={value}
         />
       )}
@@ -43,4 +45,8 @@ export const SearchBar = ({ property, className, value }) => {
 
 SearchBar.propTypes = {
   property: PropTypes.oneOf(["panjang", "icon-kanan", "medium"]),
+};
+
+SearchBar.defaultProps = {
+  onChange: () => {},
 };

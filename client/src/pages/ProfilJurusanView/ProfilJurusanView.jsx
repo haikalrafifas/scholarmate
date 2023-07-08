@@ -1,50 +1,51 @@
-  import React from "react";
-  import { CardJurusan } from "../../components/CardJurusan/CardJurusan";
-  import { NavNavbar } from "../../components/NavNavbar/NavNavbar";
-  import "./style.css";
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
+import { CardRumpun } from "../../components/CardRumpun/CardRumpun";
+import { NavNavbar } from "../../components/NavNavbar/NavNavbar";
+// import "./style.css";
 
-  export const ProfilJurusanView = () => {
-    return (
-      <div className="PROFIL-JURUSAN-VIEW">
-        <div className="overlap-wrapper">
-          <div className="overlap">
-            <div className="overlap-group">
-              <div className="rectangle" />
-              <div className="div">
-                <div className="ellipse" />
-                <div className="text-wrapper">RUMPUN ILMU KOMPUTER</div>
-                <h1 className="h-1">Profil Jurusan</h1>
-                <NavNavbar
-                  className="nav-navbar-instance"
-                  logoLogoClassName="design-component-instance-node"
-                  property1="with-avatar"
-                />
-              </div>
-            </div>
-            <div className="card-jurusan-wrapper">
-              <CardJurusan
-                className="card-rumpun-instance"
-                image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="Sistem informasi adalah ..."
-              />
-              <CardJurusan
-                className="card-rumpun-instance"
-                image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="Teknik Informatika adalah..."
-              />
-              <CardJurusan
-                className="card-rumpun-instance"
-                image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="Teknologi Informasi adalah..."
-              />
-              <CardJurusan
-                className="card-rumpun-instance"
-                image="https://generation-sessions.s3.amazonaws.com/da4e0e1008ef017d1ac917b5bcb034ff/img/unsplash-uip163xcv6w-1@2x.png"
-                description="Sistem Komputer adalah..."
-              />
-            </div>
+export const ProfilJurusanView = () => {
+  const { nama_rumpun } = useParams();
+  const [prodiData, setProdiData] = useState([]);
+
+  useEffect(() => {
+    fetch(`/api/profil-jurusan/rumpun-${nama_rumpun}`)
+      .then((response) => response.json())
+      .then((data) => setProdiData(data))
+      .catch((error) => console.log(error));
+  }, []);
+
+  return (
+    <div className="PROFIL-JURUSAN-VIEW">
+      <div className="div">
+        <div className="frame-2">
+          <div className="ellipse-wrapper">
+            <div className="ellipse" />
           </div>
+          <div className="text-wrapper">{nama_rumpun.replace(/-/g, " ").toUpperCase()}</div>
+          <div className="h-1-wrapper">
+            <h1 className="h-1">Profil Jurusan</h1>
+          </div>
+          <NavNavbar
+            className="nav-navbar-instance"
+            navNavPropertyNavMenuClassName="design-component-instance-node"
+            property1="with-avatar"
+          />
         </div>
+
+        <div id="list-rumpun">
+          {prodiData.map((prodi) => (
+            <CardRumpun
+              key={prodi}
+              className={`card-rumpun-${prodi.replace(/\s/g, "-").toLowerCase()}`}
+              href={`${prodi.replace(/\s/g, "-").toLowerCase()}`}
+              prodi={prodi}
+              text={prodi}
+            />
+          ))}
+        </div>
+
       </div>
-    );
-  };
+    </div>
+  );
+};

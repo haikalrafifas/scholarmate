@@ -3,7 +3,7 @@ import React from "react";
 import { useReducer } from "react";
 import "./style.css";
 
-export const Accordion = ({ stateProp, className }) => {
+export const Accordion = ({ stateProp, className, title, text }) => {
   const [state, dispatch] = useReducer(reducer, {
     state: stateProp || "closed",
   });
@@ -11,7 +11,7 @@ export const Accordion = ({ stateProp, className }) => {
   return (
     <div className={`accordion ${state.state} ${className}`}>
       <div className="headline-and-icon-of">
-        <div className="headline">Headline</div>
+        <div className="headline">{title}</div>
         <div
           className="group"
           onClick={() => {
@@ -28,7 +28,7 @@ export const Accordion = ({ stateProp, className }) => {
       {state.state === "open" && (
         <>
           <img className="img" alt="Vector" src="https://unpkg.com/@fortawesome/fontawesome-free@5.15.3/svgs/solid/caret-up.svg" />
-          <p className="this-is-accordion">This is accordion text content.</p>
+          <p className="this-is-accordion">{text}</p>
         </>
       )}
     </div>

@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const CardBeasiswa = ({ degree, country }) => {
+export const CardBeasiswa = ({ href, title, type, degree, country, registration_date, deadline_date }) => {
   const degrees = degree.split(",");
   const countries = country.split(",");
 
   return (
-    <div className="card-beasiswa">
+    <div className="card-beasiswa" onClick={() => {window.location.href = `/beasiswa/${href}`}}>
       <div className="frame">
         {degrees.map((degrees, index) => (
           <label key={index} className="button-3">
@@ -31,17 +31,17 @@ export const CardBeasiswa = ({ degree, country }) => {
         </div>
       </div>
       <div className="frame-3">
-        <div className="tipe-beasiswa">Tipe Beasiswa</div>
-        <div className="nama-beasiswa">Nama Beasiswa</div>
+        <div className="tipe-beasiswa">{type}</div>
+        <div className="nama-beasiswa">{title}</div>
       </div>
       <div className="frame-4">
         <div className="frame-5">
           <div className="text-wrapper">Pendaftaran Dibuka</div>
-          <div className="DD-MM-YYYY">DD-MM-YYYY</div>
+          <div className="DD-MM-YYYY">{registration_date}</div>
         </div>
         <div className="frame-5">
           <div className="text-wrapper">Pendaftaran Ditutup</div>
-          <div className="DD-MM-YYYY">DD-MM-YYYY</div>
+          <div className="DD-MM-YYYY">{deadline_date}</div>
         </div>
       </div>
     </div>
@@ -49,5 +49,10 @@ export const CardBeasiswa = ({ degree, country }) => {
 };
 
 CardBeasiswa.propTypes = {
+  title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   degree: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  registration_date: PropTypes.string.isRequired,
+  deadline_date: PropTypes.string.isRequired,
 };

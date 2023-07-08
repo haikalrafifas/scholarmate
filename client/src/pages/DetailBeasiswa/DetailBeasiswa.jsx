@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import { Button } from "../../components/Button/Button";
 import { NavNavbar } from "../../components/NavNavbar/NavNavbar";
 import "./style.css";
 
 export const DetailBeasiswa = () => {
+  const { nama_beasiswa } = useParams();
+  const [beasiswaData, setBeasiswaData] = useState([]);
+
+  useEffect(() => {
+    fetch(`/api/scholarships?slug=${nama_beasiswa}`)
+      .then((response) => response.json())
+      .then((data) => setBeasiswaData(data))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <div className="beasiswa-detail">
       <div className="div">
@@ -27,8 +38,8 @@ export const DetailBeasiswa = () => {
           <div className="frame-3">
             <div className="text-wrapper-6">Deskripsi</div>
             <p className="text-wrapper-7">
-              Beasiswa BidikMisi untuk jenjang S1 dengan
-              tipe Fully Funded
+              Beasiswa {beasiswaData.nama_beasiswa} untuk jenjang {beasiswaData.tingkat_pendidikan} dengan
+              tipe {beasiswaData.tipe_beasiswa}
             </p>
           </div>
           <img
@@ -38,7 +49,7 @@ export const DetailBeasiswa = () => {
           />
           <div className="frame-4">
             <div className="text-wrapper-6">Universitas</div>
-            <div className="text-wrapper-7">Delft University of Technology</div>
+            <div className="text-wrapper-7">{beasiswaData.pemberi_beasiswa}</div>
           </div>
           <img
             className="img"
@@ -64,7 +75,7 @@ export const DetailBeasiswa = () => {
             <div className="dapat-di-klik-disini">
               <span className="span">Dapat di klik </span>
               <a
-                href="https://www.schoters.com/id/beasiswa/info/adb-jsp-school-of-international-health-the-university-of-tokyo-s2-1"
+                href={beasiswaData.link_pendaftaran}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -76,7 +87,7 @@ export const DetailBeasiswa = () => {
         <NavNavbar className="nav-navbar-instance" property1="with-avatar" />
         <div className="frame-7">
           <div className="frame-8">
-            <h1 className="h-1">BidikMisi</h1>
+            <h1 className="h-1">{beasiswaData.nama_beasiswa}</h1>
             <Button
               className="button-instance"
               deviconGoogleClassName="design-component-instance-node"
@@ -86,12 +97,14 @@ export const DetailBeasiswa = () => {
             />
           </div>
           <div className="frame-9">
-            <div className="text-wrapper-9">Fully funded</div>
-            <div className="div-wrapper">
-              <div className="text-wrapper-10">S1</div>
-            </div>
+            <div className="text-wrapper-9">{beasiswaData.tipe_beasiswa}</div>
+            {beasiswaData.tingkat_pendidikan && beasiswaData.tingkat_pendidikan.split(',').map((tingkat_pendidikan) => (
+              <div className="div-wrapper">
+                <div className="text-wrapper-10">{tingkat_pendidikan}</div>
+              </div>
+            ))}
             <div className="frame-10">
-              <div className="text-wrapper-10">Belanda</div>
+              <div className="text-wrapper-10">{beasiswaData.negara_tujuan}</div>
             </div>
           </div>
         </div>
@@ -100,28 +113,35 @@ export const DetailBeasiswa = () => {
             <div className="text-wrapper-11">Keuntungan</div>
           </div>
           <div className="uang-saku-hingga-rp-wrapper">
-            <p className="p">
-              Uang saku hingga Rp 8.000.000,-
+            <div className="p" dangerouslySetInnerHTML={{ __html: beasiswaData.keuntungan }}>
+              {/* Uang saku hingga Rp 8.000.000,-
               <br />
               Asuransi kesehatan
               <br />
-              Mendapat potongan UKT sebesar 50%
-            </p>
+              Mendapat potongan UKT sebesar 50% */}
+            </div>
           </div>
         </div>
         <div className="frame-13">
           <div className="frame-2">
             <div className="text-wrapper-5">Syarat-syarat</div>
           </div>
-          <div className="frame-2">
-            <p className="text-wrapper-7">Tidak boleh melebihi 25 tahun</p>
-          </div>
-          <img
-            className="line-2"
-            alt="Line"
-            src="https://generation-sessions.s3.amazonaws.com/a0b320ab2f26394c7ac6748ea00e2007/img/line-27.svg"
-          />
-          <div className="frame-2">
+
+          {beasiswaData.persyaratan && beasiswaData.persyaratan.split(',').map((persyaratan) => (
+            <>
+              <div className="frame-2">
+                <p className="text-wrapper-7">{persyaratan}</p>
+              </div>
+              <img
+                className="line-2"
+                alt="Line"
+                src="https://generation-sessions.s3.amazonaws.com/a0b320ab2f26394c7ac6748ea00e2007/img/line-27.svg"
+              />
+            </>
+          ))}
+
+
+          {/* <div className="frame-2">
             <div className="text-wrapper-7">Minimum IPK &gt; 3,5</div>
           </div>
           <img
@@ -167,7 +187,8 @@ export const DetailBeasiswa = () => {
           />
           <div className="frame-2">
             <div className="text-wrapper-7">Kewarganegaraan Indonesia</div>
-          </div>
+          </div> */}
+
         </div>
       </div>
     </div>

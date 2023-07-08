@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-export const NavListItem = ({ className, text }) => {
+export const NavListItem = ({ className, text, href }) => {
   return (
     <div className={`nav-list-item ${className}`}>
-      <a href="#" className="list-item">
+      <a href={href} className="list-item">
         {text}
       </a>
     </div>

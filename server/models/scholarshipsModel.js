@@ -3,9 +3,15 @@ const db = require("../config/db");
 
 const { DataTypes } = Sequilize;
 
-const Beasiswa = db.define(
-  "scholarships",
-  {
+const Beasiswa = db.define("beasiswa", {
+    beasiswa_id: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      primaryKey: true,
+    },
+    slug: {
+      type: DataTypes.STRING
+    },
     nama_beasiswa: {
       type: DataTypes.STRING,
     },
@@ -40,8 +46,10 @@ const Beasiswa = db.define(
       type: DataTypes.INTEGER,
     },
   },
-  { freezeTabelName: true },
-  { timestamps: false }
+  {
+    freezeTableName: true,
+    timestamps: false,
+  },
 );
 
 // class Scholarships {

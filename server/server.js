@@ -15,6 +15,8 @@ try {
   console.error(error);
 }
 
+const PORT = process.env.PORT || 3001;
+
 // logger
 app.use(logger);
 
@@ -23,15 +25,15 @@ app.use(express.json()); //parse json data
 // cookie parser
 app.use(cookieParser());
 // cors
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: `http://localhost:${PORT}` }));
 
 // //Global error handler
 app.use(errorHandler);
 
 app.use("/scholarships", require("./routes/api/scholarships"));
-app.use("/program-studi", require("./routes/api/programStudi"));
+// app.use("/program-studi", require("./routes/api/programStudi"));
 app.use("/users", require("./routes/api/user"));
 app.use("/profil-jurusan", require("./routes/api/profilJurusan"));
+app.use("/", (req, res) => res.json({"error": "invalid parameter"}));
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));

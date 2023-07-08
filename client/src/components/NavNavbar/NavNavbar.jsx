@@ -7,7 +7,9 @@ import "./style.css";
 export const NavNavbar = ({ hasLoggedIn, avatar, className }) => {
   return (
     <div className={`nav-navbar ${className}`}>
-      <Logo className="logo-instance" />
+      <a href="/">
+        <Logo className="logo-instance" />
+      </a>
       <NavNav
         property1="nav-menu"
         hasLoggedIn={hasLoggedIn}
