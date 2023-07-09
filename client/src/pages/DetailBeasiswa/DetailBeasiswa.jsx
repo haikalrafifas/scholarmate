@@ -8,12 +8,29 @@ export const DetailBeasiswa = () => {
   const { nama_beasiswa } = useParams();
   const [beasiswaData, setBeasiswaData] = useState([]);
 
+  const timestampToDate = (timestamp) => {
+    if ( timestamp === null ) return "N/A";
+    const date = new Date(timestamp);
+    return date.toLocaleDateString("id-ID", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+  };
+
   useEffect(() => {
-    fetch(`/api/scholarships?slug=${nama_beasiswa}`)
+    fetch(`/api/scholarships/${nama_beasiswa}`)
       .then((response) => response.json())
       .then((data) => setBeasiswaData(data))
       .catch((error) => console.log(error));
-  }, []);
+  }, [nama_beasiswa]);
+
+  if ( beasiswaData === null ) return (
+    <div style={{color: 'red'}}>
+      Halaman Tidak Ditemukan! <br/>
+      <a href="/">Kembali ke halaman utama</a>
+    </div>
+  );
 
   return (
     <div className="beasiswa-detail">
@@ -27,8 +44,8 @@ export const DetailBeasiswa = () => {
               alt="Line"
               src="https://generation-sessions.s3.amazonaws.com/a0b320ab2f26394c7ac6748ea00e2007/img/line-23.svg"
             />
-            <div className="text-wrapper-3">22 Januari 2023</div>
-            <div className="text-wrapper-4">22 Maret 2023</div>
+            <div className="text-wrapper-3">{timestampToDate(beasiswaData.tanggal_mulai_daftar)}</div>
+            <div className="text-wrapper-4">{timestampToDate(beasiswaData.tanggal_akhir_daftar)}</div>
           </div>
         </div>
         <div className="frame">

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
@@ -46,13 +45,4 @@ export const CardBeasiswa = ({ href, title, type, degree, country, registration_
       </div>
     </div>
   );
-};
-
-CardBeasiswa.propTypes = {
-  title: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  degree: PropTypes.string.isRequired,
-  country: PropTypes.string.isRequired,
-  registration_date: PropTypes.string.isRequired,
-  deadline_date: PropTypes.string.isRequired,
 };
