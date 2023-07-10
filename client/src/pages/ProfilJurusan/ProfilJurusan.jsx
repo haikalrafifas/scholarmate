@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { CardRumpun } from "../../components/CardRumpun/CardRumpun";
 import { NavNavbar } from "../../components/NavNavbar/NavNavbar";
 import { SearchBar } from "../../components/SearchBar/SearchBar";
+import { Footer } from "../../components/Footer/Footer";
 import "./style.css";
 
 export const ProfilJurusan = () => {
@@ -26,6 +27,7 @@ export const ProfilJurusan = () => {
   }, []);
 
   return (
+    <>
     <div className="PROFIL-JURUSAN-VIEW">
       <div className="div">
         <div className="p-wrapper">
@@ -55,23 +57,29 @@ export const ProfilJurusan = () => {
             type="submit"
           />
           </form>
-        </div>
 
-        {rumpunData.map((rumpun) => (
-          <CardRumpun
-            key={rumpun}
-            className={`card-rumpun-${rumpun.replace(/\s/g, "-").toLowerCase()}`}
-            href={`rumpun-${rumpun.replace(/\s/g, "-").toLowerCase()}`}
-            rumpun={rumpun}
-            text={
-              <>
-                RUMPUN <br /> {rumpun}
-              </>
-            }
-          />
-        ))}
+          <div className="card-rumpun-container">
+            {rumpunData.map((rumpun) => (
+              <CardRumpun
+                key={rumpun}
+                // className={`card-rumpun-${rumpun.replace(/\s/g, "-").toLowerCase()}`}
+                className="card-rumpun"
+                href={`rumpun-${rumpun.replace(/\s/g, "-").toLowerCase()}`}
+                rumpun={rumpun}
+                text={
+                  <>
+                    RUMPUN <br /> {rumpun}
+                  </>
+                }
+              />
+            ))}
+          </div>
+
+        </div>
 
       </div>
     </div>
+    <div style={{width: '100%'}}><Footer /></div>
+    </>
   );
 };

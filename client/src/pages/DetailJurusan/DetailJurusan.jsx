@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Accordion } from "../../components/Accordion/Accordion";
 import { NavNavbar } from "../../components/NavNavbar/NavNavbar";
 import { ProfilJurusanError } from "../ProfilJurusanError/ProfilJurusanError";
+import { Footer } from "../../components/Footer/Footer";
 import "./style.css";
 
 export const DetailJurusan = () => {
@@ -50,6 +51,7 @@ export const DetailJurusan = () => {
   }
 
   return (
+    <>
     <div className="DETAIL-PROFIL">
       <div className="div">
         <div className="overlap-group">
@@ -67,8 +69,15 @@ export const DetailJurusan = () => {
           <Accordion title="Prospek Lulusan" text={prospekData} />
         </div>
         <div className="frame-2">
-          <div className="ellipse" />
-          <h1 className="text-wrapper">{nama_prodi.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</h1>
+          <div className="ellipse-wrapper">
+            <div className="ellipse" />
+          </div>
+          <div className="h-1-wrapper" align="center">
+            <h1 className="h-1">
+              {nama_prodi.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} <br />
+            </h1>
+          </div>
+          {/* <h1 className="text-wrapper">{nama_prodi.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</h1> */}
           <p className="p">Temukan informasi mengenai jurusan ini</p>
           <NavNavbar
             className="nav-navbar-instance"
@@ -78,5 +87,7 @@ export const DetailJurusan = () => {
         </div>
       </div>
     </div>
+    <div style={{width: '100%'}}><Footer /></div>
+    </>
   );
 };

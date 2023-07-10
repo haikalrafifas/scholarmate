@@ -104,7 +104,7 @@ export const DetailBeasiswa = () => {
         <NavNavbar className="nav-navbar-instance" property1="with-avatar" />
         <div className="frame-7">
           <div className="frame-8">
-            <h1 className="h-1">{beasiswaData.nama_beasiswa}</h1>
+            <h1 className="h-1" align="left">{beasiswaData.nama_beasiswa}</h1>
             <Button
               className="button-instance"
               deviconGoogleClassName="design-component-instance-node"

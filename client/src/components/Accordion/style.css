@@ -62,7 +62,8 @@
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-    white-space: nowrap;
+    white-space: normal;
+    /* overflow: hidden; */
   }
   
   .accordion.closed {

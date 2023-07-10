@@ -4,15 +4,16 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  margin-bottom: 10rem;
 }
 
 .beasiswa .div-2 {
   background-color: #faeee5;
   border: 1px none;
-  height: 1025px;
+  /* height: 65rem; */
   overflow: hidden;
   position: relative;
-  width: 1280px;
+  width: 100%;
 }
 
 .beasiswa .frame-6 {
@@ -20,10 +21,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  left: -186px;
+  /* left: -186px; */
+  left: -4rem;
   position: absolute;
-  top: -423px;
-  width: fit-content;
+  /* top: -423px; */
+  top: -26rem;
+  /* width: fit-content; */
+  width: 100%;
 }
 
 .beasiswa .ellipse-2 {
@@ -39,17 +43,21 @@
   font-family: "Poppins", Helvetica;
   font-size: 30px;
   font-weight: 700;
-  left: 540px;
+  /* left: 540px; */
+  left: 35rem;
   letter-spacing: 0;
   line-height: 45px;
   position: absolute;
-  top: 672px;
+  /* top: 672px; */
+  top: 41rem;
   white-space: nowrap;
 }
 
 .beasiswa .nav-navbar-instance {
-  left: 186px !important;
+  /* left: 186px !important; */
+  width: 100%;
   position: absolute !important;
+  /* top: 27rem !important; */
   top: 423px !important;
   padding-left: 70px;
 }
@@ -79,7 +87,8 @@
   left: 361px !important;
   position: absolute !important;
   top: 419px !important;
-  width: 784px !important;
+  /* width: 784px !important; */
+  width: 65%;
 }
 
 .beasiswa .search-bar-2 {
@@ -99,10 +108,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 60px;
+  gap: 80px;
   margin-top: 20px;
-  max-height: 30rem;
-  overflow-y: auto;
+  /* max-height: 30rem; */
+  /* overflow-y: auto; */
+  width: 88%;
 }
 
 /* .beasiswa .card-beasiswa { */

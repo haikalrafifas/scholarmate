@@ -9,7 +9,7 @@ import { HomePages } from "./pages/HomePages/HomePages"
 import { ProfilJurusan  } from "./pages/ProfilJurusan/ProfilJurusan"
 // import { ProfilJurusanError } from "./pages/ProfilJurusanError/ProfilJurusanError";
  import { LoginPage } from "./pages/LoginPage/LoginPage"
-// import { SignupPage } from "./pages/SignupPage/SignupPage"
+import { SignupPage } from "./pages/SignupPage/SignupPage"
 import { ProfilJurusanView } from "./pages/ProfilJurusanView/ProfilJurusanView";
 import {Beasiswa } from "./pages/Beasiswa/Beasiswa"
 import { DetailBeasiswa } from "./pages/DetailBeasiswa/DetailBeasiswa";
@@ -36,6 +36,7 @@ function App() {
             <Route path="/jurusan/:nama_prodi" component={DetailJurusan} />
             <Route path="/jurusan" component={ProfilJurusan} />
             <Route path="/login" component={LoginPage} />
+            <Route path="/register" component={SignupPage} />
             <Route component={OnDevelop} />
           </Switch>
         </Router>

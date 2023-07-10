@@ -1,4 +1,4 @@
-.PROFIL-JURUSAN-VIEW {
+/* .PROFIL-JURUSAN-VIEW {
   background-color: #faeee5;
   display: flexbox;
   flex-direction: row;
@@ -41,11 +41,11 @@
 }
 
 .PROFIL-JURUSAN-VIEW .div {
-  align-items: center; /* Mengatur pengaturan vertikal ke tengah */
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center; /* Mengatur pengaturan horizontal ke tengah */
+  justify-content: center;
   left: 0;
   position: absolute;
   top: 0;
@@ -116,4 +116,30 @@
   margin-top: 900px;
   position: relative;
   width: 12%;
+} */
+
+.PROFIL-JURUSAN-VIEW .h-1-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  left: 35rem;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+}
+
+.PROFIL-JURUSAN-VIEW .h-1 {
+  color: #e7f4ff;
+  font-family: "Poppins", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 90px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
 }

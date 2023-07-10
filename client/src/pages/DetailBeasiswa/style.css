@@ -13,13 +13,15 @@
   border: 1px none;
   height: 1740px;
   position: relative;
-  width: 1280px;
+  /* width: 1280px; */
+  width: 100%;
 }
 
 .beasiswa-detail .group {
+  padding-top: 2rem;
   height: 101px;
   left: 73px;
-  position: absolute;
+  position: relative;
   top: 340px;
   width: 1126px;
   margin-top: -30px;
@@ -256,7 +258,8 @@
 .beasiswa-detail .frame-8 {
   align-items: flex-start;
   display: flex;
-  gap: 732px;
+  /* gap: 732px; */
+  gap: 1rem;
   position: relative;
   width: fit-content;
 }
@@ -270,10 +273,12 @@
   line-height: 75px;
   margin-top: -1px;
   position: relative;
-  white-space: nowrap;
+  white-space: normal;
+  /* white-space: nowrap; */
   width: fit-content;
   margin-top: -100px;
   margin-left: 10px;
+  /* max-width: 100px; */
 }
 
 .beasiswa-detail .button-instance {

@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const Button = ({ property1, className, onClick, text }) => {
+export const Button = ({ property1, className, onClick, text, type }) => {
   return (
-    <div className={`button ${property1} ${className}`} onClick={onClick}>
+    <button className={`button ${property1} ${className}`} onClick={onClick} type={type}>
       {["primary", "with-logo-right"].includes(property1) && (
         <div className="label">{text}</div>
       )}
@@ -22,7 +22,7 @@ export const Button = ({ property1, className, onClick, text }) => {
       )}
 
       {property1 === "with-logo-left" && <div className="label-light">{text}</div>}
-    </div>
+    </button>
   );
 };
 

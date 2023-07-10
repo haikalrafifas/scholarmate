@@ -12,7 +12,8 @@
     left: 0 !important;
     position: absolute !important;
     top: 0 !important;
-    right: -30px;
+    /* right: -30px; */
+    right: 0;
   }
 
   .wrapper-welcome h1 {
@@ -197,42 +198,4 @@
     margin-right: 150px;
     margin-left: 150px;
     color: black;
-  }
-
-  .footer{
-    padding: 20px;
-    background-color:#4f709c;
-    padding-bottom: 300px;
-  }
-
-  .footer-container{
-    margin: 30px;
-    text-align: left;
-  }
-
-  .phone img{
-    width: 20px;
-    height: 20px;
-  }
-
-  .email img{
-    width: 20px;
-    height: 20px;
-  }
-
-  .abt-scholar{
-    padding-bottom: 30px;
-  }
-
-  .call-us{
-    padding-bottom: 10px;
-  }
-
-  .phone{
-    padding-bottom: 10px;
-    gap: 20px;
-  }
-
-  .email{
-    padding-bottom: 10px;
   }
