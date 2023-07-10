@@ -1,0 +1,1 @@
+Di sini kita akan memasukkan file-file routes yang yang menangani perutean dan pemetaan URL ke fungsi atau pengendali tertentu di dalam aplikasi. Ini mendefinisikan rute yang tersedia dan tindakan atau pengontrol yang sesuai.

@@ -1,0 +1,1 @@
+Pada folder ini, kita akan membuat tampilan dari website kita

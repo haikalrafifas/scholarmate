@@ -1,0 +1,18 @@
+body{
+  background-color: #FAEEE5;
+}
+
+.container {
+  background-color: #D8C4B6E5;
+  opacity: 90%;
+  padding-right: 250px;
+  padding-left: 250px;
+  border-radius: 20px;
+  color: black;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,107 @@
+.search-bar {
+  align-items: center;
+  background-color: #9ecbee;
+  border-radius: 15px;
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  position: relative;
+  margin-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  
+}
+
+.search-bar .cari-jurusan-yang {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22.5px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  padding-top: 8px;
+  padding-bottom: -5px;
+  padding: 8px;
+  width: 600px;
+  background-color: #9ecbee;
+  border: #9ecbee ;
+  outline: none;
+  margin-right: 12px;
+}
+
+.search-bar .vector {
+  height: 18px;
+  min-width: 18px;
+  position: relative;
+  align-self: flex-start; /* Tambahkan ini untuk sejajarkan ikon dengan teks */
+  padding-top: 18px;
+  padding-bottom: -5px;
+}
+
+.search-bar .p {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22.5px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  padding-top: 8px;
+  padding-bottom: -5px;
+  padding: 8px;
+  width: 400px;
+  background-color: #9ecbee;
+  border: #9ecbee;
+  outline: none;
+}
+
+.search-bar.icon-kanan {
+  width: 480px;
+  padding-right: 24px;
+}
+
+.search-bar.medium {
+  width: 480px;
+  padding-left: 16px;
+
+}
+
+.search-bar.panjang {
+  width: 700px;
+  padding-left: 16px;
+
+}
+
+.search-bar.icon-kanan .p {
+  font-family: "Source Code Pro", Helvetica;
+}
+
+.search-bar.medium .p {
+  font-family: "Source Code Pro", Helvetica;
+}
+
+.search-bar.panjang .p {
+  font-family: "Poppins", Helvetica;
+}
+
+.search-bar .long{
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22.5px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  padding-top: 8px;
+  padding-bottom: -5px;
+  padding: 8px;
+  width: 600px;
+  background-color: #9ecbee;
+  border: #9ecbee ;
+  outline: none;
+}

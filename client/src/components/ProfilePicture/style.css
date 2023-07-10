@@ -1,0 +1,16 @@
+.profile-picture {
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.profile-picture.avatar-on-navbar {
+  background-image: url(https://generation-sessions.s3.amazonaws.com/5c0d966a0aa0c895329309c03339302e/img/header---avatar-1@2x.png);
+  height: 40px;
+  width: 40px;
+}
+
+.profile-picture.avatar-on-profile-page {
+  background-image: url(https://generation-sessions.s3.amazonaws.com/5c0d966a0aa0c895329309c03339302e/img/header---avatar-3@2x.png);
+  height: 200px;
+  width: 200px;
+}

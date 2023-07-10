@@ -1,0 +1,78 @@
+.button {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black;
+  color: #ffffff;
+}
+
+.button .label {
+  color: #000000;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 45px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button .label-light {
+  color: #000000;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 45px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button .label:hover {
+  color: #ffffff;
+}
+
+.button .devicon-google {
+  position: relative;
+}
+
+.button.with-logo-right {
+  width: 169px;
+}
+
+.button.primary {
+  width: fit-content;
+  padding-right: -20px;
+}
+
+.button.with-logo-left {
+  width: fit-content;
+}
+
+.button.with-logo-right .devicon-google {
+  height: 23px;
+  min-width: 19px;
+}
+
+.button.primary .devicon-google {
+  height: 19px;
+  min-width: 20px;
+}
+
+.button.with-logo-left .devicon-google {
+  height: 19px;
+  min-width: 20px;
+}

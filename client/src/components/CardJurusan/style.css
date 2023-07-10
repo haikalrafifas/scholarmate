@@ -1,0 +1,36 @@
+.card {
+    display: flexbox;
+    flex-direction: row;
+    width: 275px;
+    height: 275px;
+    margin-bottom: 50px;
+    border: 1px solid blanchedalmond;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    height: 200px;
+    overflow: hidden;
+    background-color: aqua;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-description {
+    padding: 16px;
+    height: 100px;
+    background-color: #f5f5f5;
+  }
+
+  .card-description p{
+    padding: 5px;
+    font-size: 12px;
+    color: black;
+    text-align: start;
+  }
+  

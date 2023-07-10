@@ -1,0 +1,209 @@
+.profil-pengguna {
+  background-color: #faeee5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+  
+.profil-pengguna .div {
+  background-color: #faeee5;
+  border: 1px solid;
+  border-color: #000000;
+  height: 900px;
+  position: relative;
+  width: 1280px;
+}
+
+.profil-pengguna .nav-navbar-instance {
+  left: 0 !important;
+  right: -40px;
+  position: absolute !important;
+  top: 0 !important;
+  padding-bottom: 9px;
+}
+
+.profil-pengguna .overlap-group {
+  height: 353px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 1280px;
+}
+
+.profil-pengguna .image {
+  height: 206px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.profil-pengguna .frame-2 {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  left: 54px;
+  position: absolute;
+  top: 153px;
+  width: fit-content;
+}
+
+.profil-pengguna .profile-picture-instance {
+  min-width: 200px !important;
+  position: relative !important;
+  width: unset !important;
+}
+
+.profil-pengguna .frame-3 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 920px;
+}
+
+.profil-pengguna .frame-4 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: fit-content;
+}
+
+.profil-pengguna .text-wrapper {
+  color: #000000;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 60px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  padding-top: 20px;
+  padding-left: -10px;
+}
+
+.profil-pengguna .text-wrapper-2 {
+  color: #000000;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profil-pengguna .material-symbols {
+  height: 37px;
+  min-width: 37px;
+  position: relative;
+}
+
+.profil-pengguna .frame-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 129px;
+  position: absolute;
+  top: 466px;
+  width: fit-content;
+}
+
+.profil-pengguna .frame-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: fit-content;
+}
+
+.profil-pengguna .frame-7 {
+  align-items: center;
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+  position: relative;
+  width: 369px;
+}
+
+.profil-pengguna .button-instance {
+  background-color: #9ecbee !important;
+  height: 30px !important;
+  width: 120px !important;
+}
+
+.profil-pengguna .design-component-instance-node {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  margin-bottom: -4px !important;
+  margin-left: -9px !important;
+  margin-right: -9px !important;
+  margin-top: -6px !important;
+}
+
+.profil-pengguna .text-wrapper-3 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profil-pengguna .line {
+  height: 2px;
+  min-width: 458px;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profil-pengguna .frame-8 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: fit-content;
+}
+
+.profil-pengguna .frame-9 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 1040px;
+}
+
+.profil-pengguna .input-field-instance {
+  height: 87px !important;
+  width: 460px !important;
+}
+
+.profil-pengguna .input-field-2 {
+  align-self: stretch !important;
+  background-color: #9ecbee !important;
+  flex: 1 !important;
+  width: unset !important;
+}
+
+.profil-pengguna .input-field-3 {
+  font-size: 24px !important;
+  line-height: 36px !important;
+  margin-bottom: -5.5px !important;
+  margin-top: -7.5px !important;
+}
